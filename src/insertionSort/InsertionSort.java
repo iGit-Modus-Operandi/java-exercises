@@ -33,7 +33,7 @@ public class InsertionSort {
   }
 
   private static void printArray(int[] numbers) {
-    for(int i=0; i<numbers.length; i++){
+    for(int i=0; i < numbers.length; i++){
       System.out.println(numbers[i]);
     }
   }
