@@ -1,3 +1,6 @@
+/*
+ * This sorting algorithm uses insertion sort to arrange a series of randomly generated numbers in an array
+ */
 package insertionSort;
 import java.util.Random;
 
@@ -34,7 +37,7 @@ public class InsertionSort {
 
   private static void printArray(int[] numbers) {
     for(int i=0; i < numbers.length; i++){
-      System.out.println(numbers[i]);
+      System.out.print(numbers[i] + " ");
     }
   }
 
