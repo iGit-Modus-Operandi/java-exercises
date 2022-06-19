@@ -24,6 +24,8 @@ public class Fibonacci {
   }
 
   private static long fibonacci(int n) {
+    // Base Case: a condition inside a recursive method where if this condition is met, it doesn't make a recursive call
+    // used to avoid infinite recursion
     if (n <= 1) {
       return n;
     }
