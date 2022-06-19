@@ -15,7 +15,7 @@ public class Fibonacci {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Please enter a number: ");
+    System.out.print("Please enter a number: "); // limited to 92, after which, long data type could not handle the large number
     int n = scanner.nextInt();
 
     cache = new long[n + 1];
