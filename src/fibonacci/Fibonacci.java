@@ -21,6 +21,12 @@ public class Fibonacci {
     cache = new long[n + 1];
     long fibonacciSum = fibonacci(n);
     System.out.println("The sum up to the " + n + "th number of the fibonacci sequence is " + NumberFormat.getIntegerInstance().format(fibonacciSum));
+
+    // Option to print out the whole fibonacci sequence
+    for (int i = 0; i <= n; i++){
+      System.out.print(NumberFormat.getIntegerInstance().format(fibonacci(i)) + " ");
+    }
+
   }
 
   private static long fibonacci(int n) {
@@ -30,7 +36,10 @@ public class Fibonacci {
       return n;
     }
 
-    if (cache[n] != 0) {
+    /* Memoization or memoisation is an optimization technique used primarily to speed up computer programs
+    by storing the results of expensive function calls and returning the cached result when the same inputs occur again. */
+
+    if (cache[n] != 0) { // Note: use zero instead of NULL because primitives would default to zero
       return cache[n];
     }
 
