@@ -6,9 +6,9 @@ public class BubbleSort {
 
   public static void main(String[] args) {
     Random random = new Random();
-    int [] numbers = new int[10];
+    int[] numbers = new int[10];
 
-    for(int i = 0; i < numbers.length; i++){
+    for (int i = 0; i < numbers.length; i++) {
       numbers[i] = random.nextInt(1000);
     }
 
@@ -17,26 +17,31 @@ public class BubbleSort {
 
     bubbleSort(numbers);
 
-    System.out.println("After sorting");
+    System.out.println("\nAfter sorting");
     printArray(numbers);
 
   }
 
   private static void bubbleSort(int[] numbers) {
-    for (int i = 0; i < numbers.length - 1; i++)
-      if (numbers[i] > numbers[i + 1]){
-        swap(numbers, numbers[i], numbers[i + 1]);
-      }
-  }
+    boolean swappedSomething = true;
 
-  private static void swap(int[] numbers, int index1, int index2) {
-    int temp = numbers[index1];
-    numbers[index1] = numbers[index2];
-    numbers[index2] = temp;
+    while (swappedSomething) {
+      swappedSomething = false;
+
+      for (int i = 0; i < numbers.length - 1; i++) {
+        if (numbers[i] > numbers[i + 1]) {
+          swappedSomething = true;
+
+          int temp = numbers[i];
+          numbers[i] = numbers[i + 1];
+          numbers[i + 1] = temp;
+        }
+      }
+    }
   }
 
   private static void printArray(int[] numbers) {
-    for (int i = 0; i < numbers.length; i++){
+    for (int i = 0; i < numbers.length; i++) {
       System.out.println(numbers[i]);
     }
   }
