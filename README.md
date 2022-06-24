@@ -2,12 +2,13 @@
 Exercise and algorithms for common problems
 
 * Anagram
-* Bubble Sort
 * Fibonacci
-* Insertion Sort
+* Sorting Algorithms
+  * Insertion Sort
+  * Quick Sort
+  * Bubble Sort
 * Mortgage Calculator
 * Prime Test
-* Quick Sort
 * Swap Integer
 
 ### Commit Message Tags
