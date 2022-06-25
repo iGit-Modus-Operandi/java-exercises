@@ -1,7 +1,7 @@
 /*
  * This sorting algorithm uses insertion sort to arrange a series of randomly generated numbers in an array
  */
-package insertionSort;
+package sortingAlgorithms.insertionSort;
 import java.util.Random;
 
 public class InsertionSort {

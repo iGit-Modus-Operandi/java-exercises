@@ -5,7 +5,7 @@ and all the numbers in the array that are higher than the pivot to the right of 
 3. Recursively quick sort all the values to the left and right of the pivot.
 */
 
-package quickSort;
+package sortingAlgorithms.quickSort;
 
 import java.util.Random;
 
@@ -24,7 +24,7 @@ public class QuickSort {
 
     quickSort(numbers);
 
-    System.out.println("After sorting");
+    System.out.println("\nAfter sorting");
     printArray(numbers);
   }
 
