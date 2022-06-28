@@ -17,7 +17,16 @@ public class MergeSort {
 
     mergeSort(numbers);
 
-    System.out.println("After sorting");
+    System.out.println("\nAfter sorting");
     printArray(numbers);
+  }
+
+  private static void mergeSort(int[] numbers) {
+  }
+
+  private static void printArray(int[] numbers) {
+    for (int i = 0; i < numbers.length; i++){
+      System.out.println(numbers[i] + " ");
+    }
   }
 }
