@@ -52,10 +52,13 @@ public class QuickSort {
     int rightPointer = highIndex - 1;
 
     while (leftPointer < rightPointer) {
+
+      // Walk from left until you find a number greater than the pivot or hit the right pointer
       while (numbers[leftPointer] <= pivot && leftPointer < rightPointer) {
         leftPointer++;
       }
 
+      // Walk from right until you find a number greater than the pivot or hit the left pointer
       while (numbers[rightPointer] >= pivot && leftPointer < rightPointer) {
         rightPointer--;
       }
