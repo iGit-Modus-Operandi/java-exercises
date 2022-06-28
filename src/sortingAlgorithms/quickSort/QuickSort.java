@@ -36,6 +36,9 @@ public class QuickSort {
     if (lowIndex >= highIndex) {
       return;
     }
+    if(highIndex - lowIndex < 1){
+      return;
+    }
 
     int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
     int pivot = numbers[pivotIndex];
@@ -64,13 +67,13 @@ public class QuickSort {
       }
 
       swap(numbers, leftPointer, rightPointer);
+    }
 
       if (numbers[leftPointer] > numbers[highIndex]) {
         swap(numbers, leftPointer, highIndex);
       } else {
         leftPointer = highIndex;
       }
-    }
     return leftPointer;
   }
 
