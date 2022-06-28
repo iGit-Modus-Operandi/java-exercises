@@ -17,13 +17,13 @@ public class InsertionSort {
     System.out.println("Before sorting: ");
     printArray(numbers);
 
-    sortArray(numbers);
+    insertionSort(numbers);
 
     System.out.println("\nAfter sorting: ");
     printArray(numbers);
   }
 
-  private static void sortArray(int[] numbers) {
+  private static void insertionSort(int[] numbers) {
     for(int i=1; i < numbers.length; i++){
       int temp = numbers[i];
 
