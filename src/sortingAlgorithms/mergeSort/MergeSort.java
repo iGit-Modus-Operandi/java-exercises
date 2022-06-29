@@ -6,10 +6,10 @@ public class MergeSort {
 
   public static void main(String[] args) {
     Random random = new Random();
-    int [] numbers = new int[10];
+    int [] numbers = new int[10000];
 
     for (int i = 0; i < numbers.length; i++){
-      numbers[i] = random.nextInt(100);
+      numbers[i] = random.nextInt(1000000);
     }
 
     System.out.println("Before sorting: ");
@@ -43,7 +43,7 @@ public class MergeSort {
     mergeSort(leftHalf);
     mergeSort(rightHalf);
     
-    merge();
+    merge(numbers, leftHalf, rightHalf);
   }
 
   private static void merge(int [] numbers, int [] leftHalf, int [] rightHalf) {
@@ -73,8 +73,8 @@ public class MergeSort {
     }
 
     while (j < rightSize){
-      numbers[k] = leftHalf[i];
-      i++;
+      numbers[k] = rightHalf[j];
+      j++;
       k++;
     }
   }
