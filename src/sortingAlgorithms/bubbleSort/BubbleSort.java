@@ -1,3 +1,7 @@
+/*
+ * This sorting algorithm uses bubble sort to arrange a series of randomly generated numbers in an array
+ */
+
 package sortingAlgorithms.bubbleSort;
 
 import java.util.Random;

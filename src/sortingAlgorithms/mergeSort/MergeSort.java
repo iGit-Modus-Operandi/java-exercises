@@ -1,3 +1,7 @@
+/*
+ * This sorting algorithm uses merge sort to arrange a series of randomly generated numbers in an array
+ */
+
 package sortingAlgorithms.mergeSort;
 
 import java.util.Random;
