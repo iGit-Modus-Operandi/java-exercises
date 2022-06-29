@@ -40,6 +40,43 @@ public class MergeSort {
       rightHalf[i - midIndex] = numbers[i];
     }
 
+    mergeSort(leftHalf);
+    mergeSort(rightHalf);
+    
+    merge();
+  }
+
+  private static void merge(int [] numbers, int [] leftHalf, int [] rightHalf) {
+    int leftSize = leftHalf.length;
+    int rightSize = rightHalf.length;
+
+    int i = 0;
+    int j = 0;
+    int k = 0;
+
+    while (i < leftSize && j < rightSize){
+      if (leftHalf[i] <= rightHalf[j]){
+        numbers[k] = leftHalf[i];
+        i++;
+      }
+      else{
+        numbers[k] = rightHalf[j];
+        j++;
+      }
+      k++;
+    }
+
+    while (i < leftSize){
+      numbers[k] = leftHalf[i];
+      i++;
+      k++;
+    }
+
+    while (j < rightSize){
+      numbers[k] = leftHalf[i];
+      i++;
+      k++;
+    }
   }
 
   private static void printArray(int[] numbers) {
