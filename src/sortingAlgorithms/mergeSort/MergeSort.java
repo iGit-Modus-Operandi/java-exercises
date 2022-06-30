@@ -1,5 +1,10 @@
 /*
  * This sorting algorithm uses merge sort to arrange a series of randomly generated numbers in an array
+ * COMPLEXITY: O(n log n)
+ * ALGORITHM:
+ * 1. Divide array into halves
+ * 2. Merge sort each half recursively
+ * 3. Once both half are in order, merge the two halves together again
  */
 
 package sortingAlgorithms.mergeSort;
