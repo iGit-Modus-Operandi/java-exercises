@@ -3,7 +3,7 @@
  * COMPLEXITY: O(n log n)
  * ALGORITHM:
  * 1. Divide array into halves
- * 2. Merge sort each half recursively
+ * 2. Merge sort each half recursively as you divide the array until only a single unit
  * 3. Once both half are in order, merge the two halves together again
  */
 
