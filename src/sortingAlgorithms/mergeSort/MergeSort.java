@@ -38,9 +38,11 @@ public class MergeSort {
     }
 
     int midIndex = inputLength / 2;
-    int [] leftHalf = new int[midIndex];
-    int [] rightHalf = new int[inputLength - midIndex];
+    int [] leftHalf = new int [midIndex];
+    int [] rightHalf = new int [inputLength - midIndex];
+    // in case the array length is odd, resulting in uneven number of elements at both sides
 
+    // populate the created arrays with elements from the original divided array
     for (int i = 0; i < midIndex; i++){
       leftHalf[i] = numbers[i];
     }
@@ -59,6 +61,8 @@ public class MergeSort {
     int leftSize = leftHalf.length;
     int rightSize = rightHalf.length;
 
+    // iterators, one to iterate on the elements of left-hand array, one to iterate on the elements of right-hand array
+    // and another one to iterate on the elements of combined array
     int i = 0;
     int j = 0;
     int k = 0;
