@@ -13,5 +13,7 @@ public class MultiplicationTable {
     for (int i = 0; i <= 10; i++){
       System.out.println(number + " * " + i + " = " + (number * i));
     }
+
+    scanner.close(); // make it a habit to close scanner after use
   }
 }
