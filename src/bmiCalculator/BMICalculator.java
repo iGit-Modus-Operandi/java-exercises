@@ -4,6 +4,7 @@
  */
 package bmiCalculator;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class BMICalculator {
@@ -18,5 +19,10 @@ public class BMICalculator {
     System.out.print("Enter your height in inches: ");
     double height = scanner.nextDouble();
 
+    double bmi = weight / (Math.pow(height, 2)) *703;
+    DecimalFormat df = new DecimalFormat("0.00");
+    System.out.println("Your BMI is: " + df.format(bmi));
+
+    scanner.close();
   }
 }
