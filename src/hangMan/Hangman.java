@@ -27,12 +27,53 @@ public class Hangman {
       Random random = new Random();
       word = words.get(random.nextInt(words.size()));
     }
-    else{
+    else {
       System.out.print("Player 1, please enter your word: ");
       word = keyboard.nextLine();
       System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
       System.out.println("Ready for player 2! Good luck");
     }
 
+    List<Character> playerGuesses = new ArrayList<>();
+    Integer wrongCount = 0;
+
+    while (true){
+      printHangedMan(wrongCount);
+
+      if (wrongCount >= 6){
+        System.out.println("You lose!");
+        System.out.println("The word was: " + word);
+        break;
+      }
+
+      printWordState (word, playerGuesses);
+
+      if (!getPlayerGuess(keyboard, word, playerGuesses)){
+        wrongCount++;
+      }
+
+      if (printWordState(word, playerGuesses)){
+        System.out.println("You win!");
+        break;
+      }
+
+      System.out.print("Please enter your guess for the word: ");
+      if (keyboard.nextLine().equals(word)){
+        System.out.println("You win!");
+        break;
+      }
+      else {
+        System.out.println("Nope! try again.");
+      }
+    }
+  }
+
+  private static boolean getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuesses) {
+  }
+
+  private static boolean printWordState(String word, List<Character> playerGuesses) {
+  }
+
+  private static void printHangedMan(Integer wrongCount) {
   }
 }
