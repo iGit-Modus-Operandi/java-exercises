@@ -10,6 +10,9 @@ Exercise and algorithms for common problems
 * Mortgage Calculator
 * Prime Test
 * Swap Integer
+* BMI Calculator
+* Hangman Games
+* Tic Tac Toe
 
 ### Commit Message Tags
 * [NOTES] - Accompanying notes discussing the concept
