@@ -15,19 +15,18 @@ public class Hangman {
 
     String word;
 
-    if (players.equals("1")){
+    if (players.equals("1")) {
       Scanner scanner = new Scanner(new File(""));
 
       List<String> words = new ArrayList<>();
 
-      while (scanner.hasNext()){
+      while (scanner.hasNext()) {
         words.add(scanner.nextLine());
       }
 
       Random random = new Random();
       word = words.get(random.nextInt(words.size()));
-    }
-    else {
+    } else {
       System.out.print("Player 1, please enter your word: ");
       word = keyboard.nextLine();
       System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -37,43 +36,59 @@ public class Hangman {
     List<Character> playerGuesses = new ArrayList<>();
     Integer wrongCount = 0;
 
-    while (true){
+    while (true) {
       printHangedMan(wrongCount);
 
-      if (wrongCount >= 6){
+      if (wrongCount >= 6) {
         System.out.println("You lose!");
         System.out.println("The word was: " + word);
         break;
       }
 
-      printWordState (word, playerGuesses);
+      printWordState(word, playerGuesses);
 
-      if (!getPlayerGuess(keyboard, word, playerGuesses)){
+      if (!getPlayerGuess(keyboard, word, playerGuesses)) {
         wrongCount++;
       }
 
-      if (printWordState(word, playerGuesses)){
+      if (printWordState(word, playerGuesses)) {
         System.out.println("You win!");
         break;
       }
 
       System.out.print("Please enter your guess for the word: ");
-      if (keyboard.nextLine().equals(word)){
+      if (keyboard.nextLine().equals(word)) {
         System.out.println("You win!");
         break;
-      }
-      else {
+      } else {
         System.out.println("Nope! try again.");
       }
     }
   }
 
-  private static boolean getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuesses) {
+  private static boolean getPlayerGuess(Scanner keyboard, String word,
+      List<Character> playerGuesses) {
+    System.out.println("Please enter a letter: ");
+    String letterGuess = keyboard.nextLine();
+    return word.contains(letterGuess);
   }
 
   private static boolean printWordState(String word, List<Character> playerGuesses) {
+    int correctCount = 0;
+    for (int i = 0; i < word.length(); i++) {
+      if (playerGuesses.contains(word.charAt(i))) {
+        System.out.println(word.charAt(i));
+        correctCount++;
+      } else {
+        System.out.println("-");
+      }
+    }
+    System.out.println();
+
+    return (word.length() == correctCount);
   }
 
   private static void printHangedMan(Integer wrongCount) {
+
   }
 }
