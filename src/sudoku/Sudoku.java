@@ -50,6 +50,21 @@ public class Sudoku {
     }
     return true;
   }
+  
+  private static  boolean isValidPlacement(int [][] board, int number, int row, int column){
+    return !isNumberInRow(board, number, row) &&
+        !isNumberInColumn(board, number, column) &&
+        !isNumberInBox(board, number, row, column);
+  }
+
+  private static boolean isNumberInBox(int[][] board, int number, int row, int column) {
+  }
+
+  private static boolean isNumberInColumn(int[][] board, int number, int column) {
+  }
+
+  private static boolean isNumberInRow(int[][] board, int number, int row) {
+  }
 
   private static void printBoard(int[][] board) {
     for (int row = 0; row < GRID_SIZE; row++){
