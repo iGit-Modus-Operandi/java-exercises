@@ -1,6 +1,7 @@
 package hangMan;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 public class Hangman {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws FileNotFoundException {
     Scanner keyboard = new Scanner(System.in);
     System.out.println("1 or 2 players?");
     String players = keyboard.nextLine();
@@ -16,7 +17,7 @@ public class Hangman {
     String word;
 
     if (players.equals("1")) {
-      Scanner scanner = new Scanner(new File(""));
+      Scanner scanner = new Scanner(new File("M:\\texts\\drafts\\academics\\auto-didact\\java\\exercises\\java-exercises\\src\\hangMan\\words_alpha.txt"));
 
       List<String> words = new ArrayList<>();
 
