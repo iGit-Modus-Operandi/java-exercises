@@ -11,6 +11,8 @@ Exercise and algorithms for common problems
 * Multiplication Table
 * Prime Numbers
 * Prime Test
+* Rock Paper Scissor game
+* Scrabble Solver
 * Sorting Algorithms
   * Bubble Sort
   * Insertion Sort
