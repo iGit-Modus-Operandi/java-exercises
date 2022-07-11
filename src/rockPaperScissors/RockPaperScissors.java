@@ -24,7 +24,39 @@ public class RockPaperScissors {
 
       System.out.println("Computer played: " + computerMove);
 
+      if (playerMove.equals(computerMove)){
+        System.out.println("The game was a tie!");
+      } else if (playerMove.equals("rock")){
+        if (computerMove.equals("scissors")){
+          System.out.println("You win!");
+        } else if (computerMove.equals("paper")){
+          System.out.println("You lose!");
+        }
+      }
 
+      else if (playerMove.equals("paper")){
+        if (computerMove.equals("rock")){
+          System.out.println("You win!");
+        } else if (computerMove.equals("scissors")){
+          System.out.println("You lose!");
+        }
+      }
+
+      else if (playerMove.equals("scissors")){
+        if (computerMove.equals("paper")){
+          System.out.println("You win!");
+        } else if (computerMove.equals("rock")){
+          System.out.println("You lose!");
+        }
+      }
+
+      System.out.println("Play again? (y/n)");
+      String playAgain = scanner.nextLine();
+
+      if (!playAgain.equals("Y")){
+        break;
+      }
     }
+    scanner.close();
   }
 }
