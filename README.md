@@ -14,6 +14,7 @@ Exercise and algorithms for common problems
 * Rock Paper Scissor game
 * Scrabble Solver
 * Sorting Algorithms
+  * Bogo Sort
   * Bubble Sort
   * Insertion Sort
   * Merge Sort
