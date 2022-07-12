@@ -10,6 +10,7 @@ public class BogoSort {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter desired number of values to be sorted: ");
     int number = scanner.nextInt();
 
     Random random = new Random();
