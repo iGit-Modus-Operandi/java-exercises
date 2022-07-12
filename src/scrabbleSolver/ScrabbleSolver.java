@@ -16,7 +16,7 @@ public class ScrabbleSolver {
 
     Map <Character, Integer> lettersCountMap = new getCharacterCountMap(letters);
 
-    BufferedReader reader = new BufferedReader(new FileReader("M:\\texts\\drafts\\academics\\auto-didact\\java\\exercises\\java-exercises\\src\\scrabbleSolver"));
+    BufferedReader reader = new BufferedReader(new FileReader("M:\\texts\\drafts\\academics\\auto-didact\\java\\exercises\\java-exercises\\src\\scrabbleSolver\\dictionary.txt"));
 
     System.out.println("All possible words you can make with those letters: ");
 
@@ -43,7 +43,7 @@ public class ScrabbleSolver {
     reader.close();
   }
 
-  private static Map <Character, Integer> getCharacterCountMap (String letters){
+  private static Map <Character, Integer> getCharacterCountMap(String letters){
     Map <Character, Integer> lettersCountMap = new HashMap<>();
 
     for (int i = 0; i < letters.length(); i++){
