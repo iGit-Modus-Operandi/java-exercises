@@ -1,6 +1,7 @@
 package mortgageCalculator;
 
 import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class MortgageCalculator {
@@ -25,7 +26,11 @@ public class MortgageCalculator {
     double mortgage = principal
         * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
         / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
-    String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);//TODO: Know why it was formatted in Php
+
+//    Locale locale = new Locale("de", "DE"); // specify which locality to use as currency
+//    String mortgageFormatted = NumberFormat.getCurrencyInstance(locale).format(mortgage);
+
+    String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
     System.out.println("Mortgage: " + mortgageFormatted);
     // TODO: Edit to include input validation
   }
