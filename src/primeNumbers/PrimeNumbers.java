@@ -14,22 +14,25 @@ public class PrimeNumbers {
 
     List<Integer> primeNumbers = new ArrayList<>();
 
-    for (int numberCheck = 2; numberCheck <= limit; numberCheck++){
+    for (int numberCheck = 2; numberCheck <= limit; numberCheck++) {
       boolean isPrime = true;
-      for (int factor = 2; factor <= numberCheck / 2; factor++){
-        if (numberCheck % factor == 0){
+
+      for (int factor = 2; factor <= numberCheck / 2; factor++) {
+        if (numberCheck % factor == 0) {
           isPrime = false;
           break;
         }
       }
 
-      if (isPrime){
+      if (isPrime) {
         primeNumbers.add(numberCheck);
       }
     }
+
     System.out.println("Prime numbers from 1 to " + limit + " are: ");
-    for (int number: primeNumbers){
+    for (int number : primeNumbers) {
       System.out.println(number);
     }
+    scanner.close();
   }
 }
