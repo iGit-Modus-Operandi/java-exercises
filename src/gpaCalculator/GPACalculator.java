@@ -78,3 +78,4 @@ public class GPACalculator {
     scanner.close();
   }
 }
+//TODO: refactor this code

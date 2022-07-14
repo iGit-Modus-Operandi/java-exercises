@@ -30,9 +30,11 @@ public class PrimeNumbers {
     }
 
     System.out.println("Prime numbers from 1 to " + limit + " are: ");
+
     for (int number : primeNumbers) {
       System.out.println(number);
     }
+
     scanner.close();
   }
 }
