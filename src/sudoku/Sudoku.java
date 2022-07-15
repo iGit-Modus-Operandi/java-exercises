@@ -21,6 +21,7 @@ public class Sudoku {
 
     if (solvedBoard(board)) {
       System.out.println("Solved successfully!");
+      System.out.println();
     } else {
       System.out.println("Unsolvable board :(");
     }
@@ -96,9 +97,9 @@ public class Sudoku {
       }
       for (int column = 0; column < GRID_SIZE; column++){
         if (column % 3 == 0 && column != 0){
-          System.out.println("|");
+          System.out.print("|");
         }
-        System.out.println(board [row][column]);
+        System.out.print(board [row][column]);
       }
       System.out.println();
     }
