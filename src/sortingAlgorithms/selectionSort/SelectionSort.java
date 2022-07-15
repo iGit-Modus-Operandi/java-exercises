@@ -1,3 +1,8 @@
+/*
+* Author: Lokesh Gupta
+* Reference: https://howtodoinjava.com/algorithm/selection-sort-java-example/
+* */
+
 package sortingAlgorithms.selectionSort;
 
 import java.util.Random;
@@ -21,6 +26,7 @@ public class SelectionSort {
     printArray(numbers);
   }
 
+  //TODO: for debug
   @SuppressWarnings({"rawtypes", "unchecked"}) //TODO: Purpose?
   private static void selectionSort(int[] numbers, int fromIndex, int toIndex) {
     for (int currentIndex = fromIndex = 0; currentIndex < toIndex; currentIndex++) {
