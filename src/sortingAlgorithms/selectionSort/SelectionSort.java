@@ -15,13 +15,26 @@ public class SelectionSort {
     System.out.println("Before sorting: ");
     printArray(numbers);
 
-    selectionSort(numbers);
+    selectionSort(numbers, 0, numbers.length);
 
     System.out.println("\nAfter sorting: ");
     printArray(numbers);
   }
 
-  private static void selectionSort(int[] numbers) {
+  @SuppressWarnings({"rawtypes", "unchecked"}) //TODO: Purpose?
+  private static void selectionSort(int[] numbers, int fromIndex, int toIndex) {
+    for (int currentIndex = fromIndex = 0; currentIndex < toIndex; currentIndex++) {
+      int indexToMove = currentIndex;
+      for (int tempIndexInLoop = currentIndex + 1; tempIndexInLoop < toIndex; currentIndex++) {
+        if (((Comparable) numbers [indexToMove]).compareTo(numbers [tempIndexInLoop]) > 0){
+          indexToMove = tempIndexInLoop;
+        }
+      }
+
+      int temp = numbers [currentIndex];
+      numbers [currentIndex] = numbers [indexToMove];
+      numbers [indexToMove] = temp;
+    }
   }
 
   private static void printArray(int[] numbers) {
