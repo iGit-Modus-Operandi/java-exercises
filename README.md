@@ -27,7 +27,9 @@ Exercise and algorithms for common problems
 ### Commit Message Tags
 * [NOTES] - Accompanying notes discussing the concept
 * [EXER] - Implementation of the concept
+* [FIGURE] - Illustration of the concept
 
 #### References
 https://www.youtube.com/c/CodingwithJohn
 https://www.youtube.com/c/programmingwithmosh
+https://www.geeksforgeeks.org/searching-algorithms/
