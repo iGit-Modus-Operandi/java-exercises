@@ -26,7 +26,11 @@ public class LinearSearch {
   }
 
   private static int search(int[] numbers, int searchValue) {
+    for (int i = 0; i < numbers.length; i++) {
+      if (numbers[i] == searchValue) {
+        return i;
+      }
+    }
     return -1;
   }
-
 }
