@@ -3,6 +3,7 @@ Exercise and algorithms for common problems
 
 * Anagram
 * Area of Circle
+* Binary Search
 * BMI Calculator
 * Fibonacci series
 * GPA Calculator
