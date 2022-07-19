@@ -19,13 +19,13 @@ public class LinearSearch {
     Random random = new Random();
     int[] numbers = new int[10];
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter the value to be searched: ");
-    int searchValue = scanner.nextInt();
-
     for (int i = 0; i < numbers.length; i++) {
       numbers[i] = random.nextInt(100);
     }
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the value to be searched: ");
+    int searchValue = scanner.nextInt();
 
     int searchResult = search(numbers, searchValue);
     if (searchResult == -1) {

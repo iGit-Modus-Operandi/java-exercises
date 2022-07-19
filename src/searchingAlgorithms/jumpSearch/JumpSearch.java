@@ -23,5 +23,6 @@ public class JumpSearch {
   }
 
   private static int jumpSearch(int[] numbers, int searchValue) {
+    return -1;
   }
 }
