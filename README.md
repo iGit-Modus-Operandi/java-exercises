@@ -16,6 +16,7 @@ Exercise and algorithms for common problems
   * Prime Test
 * Searching Algorithms
   * Binary Search
+  * Exponential Search
   * Jump Search
   * Linear Search
 * Snippets Algorithms
