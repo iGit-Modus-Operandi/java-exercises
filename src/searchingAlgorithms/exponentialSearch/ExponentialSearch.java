@@ -1,5 +1,6 @@
 package searchingAlgorithms.exponentialSearch;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,6 +21,15 @@ public class ExponentialSearch {
     exponentialSearch(numbers, numbers.length, searchValue);
   }
 
-  private static void exponentialSearch(int[] numbers, int length, int searchValue) {
+  private static int exponentialSearch(int[] numbers, int length, int searchValue) {
+    if (numbers[0] == searchValue){
+      return 0;
+    }
+    int i = 1;
+    while (i < numbers.length && numbers[i] <= searchValue){
+      i = i * 2;
+    }
+
+    return Arrays.binarySearch(numbers, i / 2, Math.min(i, numbers.length - 1), searchValue);
   }
 }
