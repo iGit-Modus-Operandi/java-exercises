@@ -1,10 +1,10 @@
 /*
- * This algorithm prints out the sum of a fibonacci sequence up to the nth number indicated through the user input
+ * This algorithm prints out the sum of a mathAlgorithms.fibonacci sequence up to the nth number indicated through the user input
  * The initial approach for this kind of task is for a recursive algorithm but choosing a large series of number would significantly introduce latency on the output.
  * The more efficient approach would be to cache computed value every step of the iteration to save processing time.
  */
 
-package fibonacci;
+package mathAlgorithms.fibonacci;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
@@ -20,9 +20,9 @@ public class Fibonacci {
 
     cache = new long[n + 1];
     long fibonacciSum = fibonacci(n);
-    System.out.println("The sum up to the " + n + "th number of the fibonacci sequence is " + NumberFormat.getIntegerInstance().format(fibonacciSum));
+    System.out.println("The sum up to the " + n + "th number of the mathAlgorithms.fibonacci sequence is " + NumberFormat.getIntegerInstance().format(fibonacciSum));
 
-    // Option to print out the whole fibonacci sequence
+    // Option to print out the whole mathAlgorithms.fibonacci sequence
     for (int i = 0; i <= n; i++){
       System.out.print(NumberFormat.getIntegerInstance().format(fibonacci(i)) + " ");
     }
