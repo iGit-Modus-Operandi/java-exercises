@@ -2,7 +2,6 @@
 Exercise and algorithms for common problems
 
 
-* Fibonacci series
 * Game Algorithms
   * Hangman
   * Rock Paper Scissor
@@ -14,9 +13,11 @@ Exercise and algorithms for common problems
   * Multiplication Table
   * Prime Numbers
   * Prime Test
+  * Fibonacci series
 * Searching Algorithms
   * Binary Search
   * Exponential Search
+  * Interpolation Search
   * Jump Search
   * Linear Search
 * Snippets Algorithms
