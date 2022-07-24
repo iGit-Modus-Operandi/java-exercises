@@ -17,8 +17,7 @@ public class Hangman {
     String word;
 
     if (players.equals("1")) {
-      Scanner scanner = new Scanner(new File("M:\\texts\\drafts\\academics\\auto-didact\\java\\exercises\\java-exercises\\src\\hangMan\\words_alpha.txt"));
-
+      Scanner scanner = new Scanner(new File("M:\\texts\\drafts\\academics\\auto-didact\\java\\exercises\\java-exercises\\src\\gameAlgorithms\\hangMan\\words_alpha.txt"));
       List<String> words = new ArrayList<>();
 
       while (scanner.hasNext()) {
@@ -27,12 +26,15 @@ public class Hangman {
 
       Random random = new Random();
       word = words.get(random.nextInt(words.size()));
+
     } else {
       System.out.print("Player 1, please enter your word: ");
       word = keyboard.nextLine();
       System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
       System.out.println("Ready for player 2! Good luck");
     }
+
+//    System.out.println(word);// for debug only
 
     List<Character> playerGuesses = new ArrayList<>();
     Integer wrongCount = 0;
@@ -71,6 +73,7 @@ public class Hangman {
       List<Character> playerGuesses) {
     System.out.println("Please enter a letter: ");
     String letterGuess = keyboard.nextLine();
+    playerGuesses.add(letterGuess.charAt(0));
     return word.contains(letterGuess);
   }
 
@@ -78,10 +81,10 @@ public class Hangman {
     int correctCount = 0;
     for (int i = 0; i < word.length(); i++) {
       if (playerGuesses.contains(word.charAt(i))) {
-        System.out.println(word.charAt(i));
+        System.out.print(word.charAt(i));
         correctCount++;
       } else {
-        System.out.println("-");
+        System.out.print("-");
       }
     }
     System.out.println();
@@ -97,7 +100,7 @@ public class Hangman {
     }
 
     if (wrongCount >= 2) {
-      System.out.println("\\ ");
+      System.out.print("\\ ");
       if (wrongCount >= 3) {
         System.out.println("/");
       } else {
@@ -110,7 +113,7 @@ public class Hangman {
     }
 
     if (wrongCount >= 5) {
-      System.out.println("/ ");
+      System.out.print("/ ");
       if (wrongCount >= 6) {
         System.out.println("\\");
       } else {
