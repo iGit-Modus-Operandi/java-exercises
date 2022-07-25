@@ -20,6 +20,24 @@ public class InterpolationSearch {
     interpolationSearch(numbers, 0, numbers.length, searchValue);
   }
 
-  private static void interpolationSearch(int[] numbers, int low, int high, int searchValue) {
+  private static int interpolationSearch(int[] numbers, int low, int high, int searchValue) {
+    int pos;
+
+    if (low <= high && searchValue >= numbers[low] && searchValue <= numbers[high]){
+      pos = low + (((high - low) / (numbers[high] - numbers[low])) * (searchValue - numbers[low]));
+
+      if (numbers[pos] == searchValue){
+        return pos;
+      }
+
+      if (numbers[pos] < searchValue){
+        return interpolationSearch(numbers, pos + 1, high, searchValue);
+      }
+
+      if (numbers[pos] > searchValue){
+        return interpolationSearch(numbers, low, pos - 1, searchValue);
+      }
+    }
+    return -1;
   }
 }
