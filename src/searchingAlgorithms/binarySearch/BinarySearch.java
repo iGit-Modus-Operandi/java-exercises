@@ -14,13 +14,10 @@
 
 package searchingAlgorithms.binarySearch;
 
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class BinarySearch<T extends Comparable<T>> {
-
-  private List<T> list;
+public class BinarySearch{
 
   public static void main(String[] args) {
     Random random = new Random();
@@ -35,34 +32,28 @@ public class BinarySearch<T extends Comparable<T>> {
     int searchValue = scanner.nextInt();
 
     int searchResult = binarySearch(numbers, 0, numbers.length - 1, searchValue);
+
+    if (searchResult == -1){
+      System.out.println("No such value was found.");
+    } else {
+      System.out.println("The value you are searching was found at index " + searchResult);
+    }
   }
 
-  private static int binarySearch(int[] numbers, int i, int i1, int searchValue) {
-    return -1;
-  }
-
-  public BinarySearch(List<T> list) {
-    this.list = list;
-  }
-
-  public int indexOf(T item) {
-    int start = 0;
-    int end = list.size() - 1;
-
-    while (start <= end) {
-      int mid = (start + end) / 2;
-      T listItem = list.get(mid);
-      if (listItem.equals(item)) {
+  private static int binarySearch(int[] numbers, int left, int right, int searchValue) {
+    if (right >= 1){
+      int mid = 1 + (right - 1) / 2;
+      if (numbers[mid] == searchValue){
         return mid;
       }
 
-      int comp = item.compareTo(listItem);
-      if (comp < 0) {
-        end = mid - 1;
-      } else if (comp > 0) {
-        start = mid + 1;
+      if (numbers[mid] > searchValue){
+        return binarySearch(numbers, left, mid - 1, searchValue);
       }
+
+      return binarySearch(numbers, mid + 1, right, searchValue);
     }
+
     return -1;
   }
 }
