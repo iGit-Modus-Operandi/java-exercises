@@ -17,7 +17,7 @@ package searchingAlgorithms.binarySearch;
 import java.util.Random;
 import java.util.Scanner;
 
-public class BinarySearch{
+public class RecursiveBinarySearch {
 
   public static void main(String[] args) {
     Random random = new Random();
