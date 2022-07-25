@@ -28,7 +28,8 @@ public class LinearSearch {
     System.out.print("Enter the value to be searched: ");
     int searchValue = scanner.nextInt();
 
-    int searchResult = search(numbers, searchValue);
+    int searchResult = linearSearch(numbers, searchValue);
+
     if (searchResult == -1) {
       System.out.println("No such value was found.");
     } else {
@@ -36,7 +37,7 @@ public class LinearSearch {
     }
   }
 
-  private static int search(int[] numbers, int searchValue) {
+  private static int linearSearch(int[] numbers, int searchValue) {
     for (int i = 0; i < numbers.length; i++) {
       if (numbers[i] == searchValue) {
         return i;
