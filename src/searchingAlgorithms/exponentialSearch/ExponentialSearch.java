@@ -20,7 +20,7 @@ public class ExponentialSearch {
 
     int searchResult = exponentialSearch(numbers, numbers.length, searchValue);
 
-    if (searchResult < 0) {
+    if (searchResult == -1) {
       System.out.println("No such value was found.");
     } else {
       System.out.println("The value you are searching was found at index " + searchResult);
@@ -31,6 +31,7 @@ public class ExponentialSearch {
     if (numbers[0] == searchValue) {
       return 0;
     }
+
     int i = 1;
     while (i < numbers.length && numbers[i] <= searchValue) {
       i = i * 2;
