@@ -30,7 +30,7 @@ public class JumpSearch {
     int step = (int) Math.floor(Math.sqrt(numbers.length));
     int prev = 0;
 
-    while (numbers[Math.min(step, numbers.length)] < searchValue) {
+    while (numbers[Math.min(step, numbers.length) - 1] < searchValue) {
       prev = step;
       step += (int) Math.floor(Math.sqrt(numbers.length));
       if (prev >= numbers.length) {
