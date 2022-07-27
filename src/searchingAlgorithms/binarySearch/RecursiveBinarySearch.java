@@ -1,5 +1,5 @@
 /*
- * CONDITION: Given an sorted array, numbers[], of n elements, search for a given value from user input.
+ * CONDITION: Given a sorted array, numbers[], of n elements, search for a given value from user input.
  * TIME COMPLEXITY: O(log n)
  * AUXILIARY SPACE: O(log n)
  * SOLUTION:
