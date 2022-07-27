@@ -19,7 +19,11 @@ public class JumpSearch {
 
     int searchResult = jumpSearch(numbers, searchValue);
 
-
+    if (searchResult == -1){
+      System.out.println("No such value was found.");
+    } else {
+      System.out.println("The value you are searching was found at index " + searchResult);
+    }
   }
 
   private static int jumpSearch(int[] numbers, int searchValue) {
