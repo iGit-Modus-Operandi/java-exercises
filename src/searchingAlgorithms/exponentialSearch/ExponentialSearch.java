@@ -1,3 +1,14 @@
+/*
+ * CONDITION: Given a sorted array, numbers[], of n elements, search for a given value from user input.
+ * TIME COMPLEXITY: O(log n)
+ * AUXILIARY SPACE: O(log n)
+ * SOLUTION:
+ * 1. Find range where element is present.
+ * 2. Perform binary search in above found range.
+ * 3. If an element matches the user input value, return the index.
+ * 4. If no match was found, return -1.
+ */
+
 package searchingAlgorithms.exponentialSearch;
 
 import java.util.Arrays;
