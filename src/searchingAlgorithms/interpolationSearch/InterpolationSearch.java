@@ -17,7 +17,13 @@ public class InterpolationSearch {
     System.out.print("Enter the value to be searched: ");
     int searchValue = scanner.nextInt();
 
-    interpolationSearch(numbers, 0, numbers.length, searchValue);
+    int searchResult = interpolationSearch(numbers, 0, numbers.length, searchValue);
+
+    if (searchResult == -1){
+      System.out.println("No such value was found.");
+    } else {
+      System.out.println("The value you are searching was found at index " + searchResult);
+    }
   }
 
   private static int interpolationSearch(int[] numbers, int low, int high, int searchValue) {
