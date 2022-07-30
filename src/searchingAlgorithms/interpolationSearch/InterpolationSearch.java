@@ -1,7 +1,7 @@
 /*
  * CONDITION: Given a sorted array, numbers[], of n unifromyl distributed elements, search for a given value from user input.
- * TIME COMPLEXITY: O(log n)
- * AUXILIARY SPACE: O(log n)
+ * TIME COMPLEXITY:
+ * AUXILIARY SPACE:
  * SOLUTION:
  * 1. In a loop, calculate the value of “pos” using the probe position formula.
  * 2: If it is a match, return the index of the item, and exit.
