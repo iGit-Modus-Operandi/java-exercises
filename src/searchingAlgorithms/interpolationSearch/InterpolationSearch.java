@@ -1,5 +1,5 @@
 /*
- * CONDITION: Given a sorted array, numbers[], of n unifromyl distributed elements, search for a given value from user input.
+ * CONDITION: Given a sorted array, numbers[], of n uniformly distributed elements, search for a given value from user input.
  * TIME COMPLEXITY:
  * AUXILIARY SPACE:
  * SOLUTION:
