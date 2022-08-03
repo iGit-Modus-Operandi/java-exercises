@@ -16,5 +16,33 @@ public class MultipleOfThree {
   }
 
   private static int isMultipleOfThree(int userInput) {
+    int oddCount = 0;
+    int evenCount = 0;
+
+    if (userInput < 0){
+      userInput = -userInput;
+    }
+
+    if (userInput == 0){
+      return 1;
+    }
+
+    if (userInput == 1){
+      return 0;
+    }
+
+    while (userInput != 0){
+      if ((userInput & 1) != 0){
+        oddCount++;
+      }
+
+      if ((userInput & 2) != 0){
+        evenCount++;
+      }
+
+      userInput = userInput >> 2;
+    }
+
+    return isMultipleOfThree(Math.abs(oddCount - evenCount));
   }
 }
