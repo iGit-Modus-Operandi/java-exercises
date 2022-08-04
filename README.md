@@ -10,13 +10,13 @@ Exercise and algorithms for common problems
   * Tic Tac Toe
 * Math Algorithms
   * Area of Circle
+  * Factorial
   * Fibonacci series
+  * Multiples
   * Multiplication Table
   * Prime Numbers
   * Prime Test
   * Square Root
-  * Factorial
-  * Multiples
 * Searching Algorithms
   * Binary Search
   * Exponential Search
