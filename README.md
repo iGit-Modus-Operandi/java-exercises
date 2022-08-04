@@ -15,6 +15,8 @@ Exercise and algorithms for common problems
   * Prime Numbers
   * Prime Test
   * Square Root
+  * Factorial
+  * Multiples
 * Searching Algorithms
   * Binary Search
   * Exponential Search
