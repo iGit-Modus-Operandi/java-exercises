@@ -2,6 +2,11 @@
  * This sorting algorithm uses insertion sort to arrange a series of randomly generated numbers in an array
  * TIME COMPLEXITY: O(N^2)
  * AUXILIARY SPACE: O(1)
+ * IMPLEMENTATION:
+ * 1. Iterate from arr[1] to arr[N] over the array.
+ * 2. Compare the current element (key) to its predecessor.
+ * 3. If the key element is smaller than its predecessor, compare it to the elements before.
+ * 4. Move the greater elements one position up to make space for the swapped element.
  */
 
 package sortingAlgorithms.insertionSort;
