@@ -1,5 +1,7 @@
 /*
  * This sorting algorithm uses insertion sort to arrange a series of randomly generated numbers in an array
+ * TIME COMPLEXITY: O(N^2)
+ * AUXILIARY SPACE: O(1)
  */
 
 package sortingAlgorithms.insertionSort;
