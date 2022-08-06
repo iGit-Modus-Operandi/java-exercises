@@ -1,5 +1,7 @@
 /*
  * This sorting algorithm uses bubble sort to arrange a series of randomly generated numbers in an array
+ * TIME COMPLEXITY: O(n^2)
+ * AUXILIARY SPACE: O(1)
  */
 
 package sortingAlgorithms.bubbleSort;
