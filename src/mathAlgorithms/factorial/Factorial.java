@@ -12,6 +12,10 @@ public class Factorial {
     System.out.println("The factorial of " + userInput + " is equalt to " + factorial(userInput));
   }
 
-  private static String factorial(int userInput) {
+  private static int factorial(int userInput) {
+    if (userInput == 0){
+      return 1;
+    }
+    return userInput * factorial(userInput - 1);
   }
 }
