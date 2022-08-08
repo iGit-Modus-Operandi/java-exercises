@@ -1,6 +1,8 @@
 /*
-* This sorting algorithm uses insertion sort to arrange a series of randomly generated numbers in an array
-* ALGORITHM:
+* This sorting algorithm uses quick sort to arrange a series of randomly generated numbers in an array
+* TIME COMPLEXITY: O(N^2) - worst case scenario
+* AUXILIARY SPACE:
+* IMPLEMENTATION:
 * 1. Choose one of the numbers in your array as the pivot.
 * 2. Partitioning: Move all the numbers in the array that are lower than the pivot to the left of it
 * and all the numbers in the array that are higher than the pivot to the right of it.
