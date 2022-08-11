@@ -28,6 +28,8 @@ Exercise and algorithms for common problems
 * Sorting Algorithms
   * Bogo Sort
   * Bubble Sort
+  * Bucket Sort
+  * Counting Sort
   * Insertion Sort
   * Merge Sort
   * Quick Sort
