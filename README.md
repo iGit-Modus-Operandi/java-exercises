@@ -12,6 +12,7 @@ Exercise and algorithms for common problems
   * Area of Circle
   * Factorial
   * Fibonacci series
+  * Least Common Multiple
   * Multiples
   * Multiplication Table
   * Prime Numbers
