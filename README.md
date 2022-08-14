@@ -13,6 +13,7 @@ Exercise and algorithms for common problems
   * Factorial
   * Fibonacci series
   * Least Common Multiple
+  * Leonardo Numbers
   * Multiples
   * Multiplication Table
   * Prime Numbers
@@ -31,10 +32,12 @@ Exercise and algorithms for common problems
   * Bubble Sort
   * Bucket Sort
   * Counting Sort
+  * Heap Sort
   * Insertion Sort
   * Merge Sort
   * Quick Sort
   * Selection Sort
+  * Shell Sort
 * String Algorithms
   * Anagram
 * Widgets Algorithms
