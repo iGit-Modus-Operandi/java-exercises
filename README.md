@@ -31,6 +31,7 @@ Exercise and algorithms for common problems
   * Bogo Sort
   * Bubble Sort
   * Bucket Sort
+  * Comb Sort
   * Counting Sort
   * Heap Sort
   * Insertion Sort
