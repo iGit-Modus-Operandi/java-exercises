@@ -33,6 +33,7 @@ Exercise and algorithms for common problems
   * Bucket Sort
   * Comb Sort
   * Counting Sort
+  * Cycle Sort
   * Heap Sort
   * Insertion Sort
   * Merge Sort
