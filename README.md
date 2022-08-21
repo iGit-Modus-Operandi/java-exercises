@@ -31,6 +31,7 @@ Exercise and algorithms for common problems
   * Bogo Sort
   * Bubble Sort
   * Bucket Sort
+  * Cocktail Sort
   * Comb Sort
   * Counting Sort
   * Cycle Sort
