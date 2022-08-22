@@ -28,6 +28,7 @@ Exercise and algorithms for common problems
 * Snippets Algorithms
   * Swap Integer
 * Sorting Algorithms
+  * Bitonic Sort
   * Bogo Sort
   * Bubble Sort
   * Bucket Sort
