@@ -46,6 +46,14 @@ public class BitonicSort {
     }
   }
 
+  private static void compAndSwap(int[] numbers, int i, int j, int dir) {
+    if ((numbers[i] > numbers[j] && dir == 1) || (numbers[i] < numbers[j] && dir == 0)){
+      int temp = numbers[i];
+      numbers[i] = numbers[j];
+      numbers[j] = temp;
+    }
+  }
+
   private static void printArray(int[] numbers) {
     for (int i = 0; i < numbers.length; i++) {
       System.out.print(numbers[i] + " ");
