@@ -36,6 +36,14 @@ public class BitonicSort {
   }
 
   private static void bitonicMerge(int[] numbers, int low, int count, int dir) {
+    if (count > 1){
+      int k = count / 2;
+      for (int i = low; i < low + k; i++) {
+        compAndSwap(numbers, i, i + k, dir);
+      }
+      bitonicMerge(numbers, low, k, dir);
+      bitonicMerge(numbers, low + k, k, dir);
+    }
   }
 
   private static void printArray(int[] numbers) {
