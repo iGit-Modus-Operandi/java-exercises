@@ -43,7 +43,15 @@ public class PancakeSort {
     return mi;
   }
 
-  private static void flip(int[] numbers, int mi) {
+  private static void flip(int[] numbers, int i) {
+    int temp, start = 0;
+    while (start < i){
+      temp = numbers[start];
+      numbers[start] = numbers[i];
+      numbers[i] = temp;
+      start++;
+      i--;
+    }
   }
 
   private static void printArray(int[] numbers) {
