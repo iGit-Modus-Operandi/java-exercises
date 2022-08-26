@@ -34,6 +34,13 @@ public class PancakeSort {
   }
 
   private static int findMax(int[] numbers, int curr_size) {
+    int mi, i;
+    for (mi = 0, i = 0; i < numbers.length; ++i) {
+      if (numbers[i] > numbers[mi]){
+        mi = i;
+      }
+    }
+    return mi;
   }
 
   private static void flip(int[] numbers, int mi) {
