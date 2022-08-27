@@ -39,6 +39,7 @@ Exercise and algorithms for common problems
   * Heap Sort
   * Insertion Sort
   * Merge Sort
+  * Pancake Sort
   * Quick Sort
   * Selection Sort
   * Shell Sort
