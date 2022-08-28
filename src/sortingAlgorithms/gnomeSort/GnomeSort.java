@@ -18,4 +18,10 @@ public class GnomeSort {
     System.out.println("After sorting");
     printArray(numbers);
   }
+
+  private static void printArray(int[] numbers) {
+    for (int i = 0; i < numbers.length; i++) {
+      System.out.println(numbers[i] + " ");
+    }
+  }
 }
