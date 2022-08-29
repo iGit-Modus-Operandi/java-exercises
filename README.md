@@ -36,6 +36,7 @@ Exercise and algorithms for common problems
   * Comb Sort
   * Counting Sort
   * Cycle Sort
+  * Gnome Sort
   * Heap Sort
   * Insertion Sort
   * Merge Sort
