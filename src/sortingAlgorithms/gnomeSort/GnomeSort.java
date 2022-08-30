@@ -43,7 +43,7 @@ public class GnomeSort {
 
   private static void printArray(int[] numbers) {
     for (int i = 0; i < numbers.length; i++) {
-      System.out.println(numbers[i] + " ");
+      System.out.print(numbers[i] + " ");
     }
   }
 }
