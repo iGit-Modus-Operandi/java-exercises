@@ -17,7 +17,7 @@ public class ActivitySelection {
     i = 0;
     System.out.println(i + " ");
 
-    for (int j = 1; j < startTime.length; j++) {
+    for (j = 1; j < startTime.length; j++) {
       if (startTime[j] >= finishTime[i]){
         System.out.println(j + " ");
         i = j;
