@@ -8,6 +8,8 @@ Exercise and algorithms for common problems
   * Scrabble Solver
   * Sudoku  
   * Tic Tac Toe
+* Greedy Algorithms
+  * Activity Selection
 * Math Algorithms
   * Area of Circle
   * Factorial
@@ -44,6 +46,7 @@ Exercise and algorithms for common problems
   * Quick Sort
   * Selection Sort
   * Shell Sort
+  * Stooge Sort
 * String Algorithms
   * Anagram
 * Widgets Algorithms
