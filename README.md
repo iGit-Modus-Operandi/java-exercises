@@ -10,6 +10,8 @@ Exercise and algorithms for common problems
   * Tic Tac Toe
 * Greedy Algorithms
   * Activity Selection
+  * Egyptian Fraction
+  * Huffman Coding
 * Math Algorithms
   * Area of Circle
   * Factorial
