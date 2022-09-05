@@ -11,7 +11,47 @@ public class HuffmanCoding {
     char[] charArray = {'a', 'b', 'c', 'd', 'e', 'f'};
     int[] charFreq = {5, 9, 12, 13, 16, 45};
 
-    PriorityQueue<HuffmanNode>q = new PriorityQueue<HuffmanNode>(n, new MyComparator());
+    PriorityQueue<HuffmanNode> queue = new PriorityQueue<HuffmanNode>(n, new MyComparator());
+
+    for (int i = 0; i < n; i++) {
+      HuffmanNode node = new HuffmanNode();
+
+      node.c = charArray[i];
+      node.data = charFreq[i];
+      
+      node.left = null;
+      node.right = null;
+      
+      queue.add(node);
+    }
+    
+    HuffmanNode root = null;
+    
+    while (queue.size() > 1){
+      HuffmanNode x = queue.peek();
+      queue.poll();
+      
+      HuffmanNode y = queue.peek();
+      queue.poll();
+      
+      HuffmanNode f = new HuffmanNode();
+      
+      f.data = x.data + y.data;
+      f.c = '-';
+      
+      f.left = x;
+      f.right = y;
+      
+      root = f;
+      
+      queue.add(f);
+      
+    }
+    
+    printCode(root, "");
+  }
+
+  private static void printCode(HuffmanNode root, String s) {
   }
 }
 
