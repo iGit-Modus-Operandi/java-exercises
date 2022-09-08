@@ -23,6 +23,7 @@ Exercise and algorithms for common problems
   * Prime Numbers
   * Prime Test
   * Square Root
+  * Ugly Numbers
 * Searching Algorithms
   * Binary Search
   * Exponential Search
