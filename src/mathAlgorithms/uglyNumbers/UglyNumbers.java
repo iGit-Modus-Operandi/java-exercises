@@ -15,6 +15,29 @@ public class UglyNumbers {
   }
 
   private static int getUglyNumbers(int userInput) {
-    return 0;
+    int i = 1;
+    int count = 1;
+    while (userInput > count){
+      i++;
+      if (isUgly(i) == 1){
+        count++;
+      }
+    }
+    return i;
+  }
+
+  private static int isUgly(int no) {
+    no = maxDivide(no, 2);
+    no = maxDivide(no, 3);
+    no = maxDivide(no, 5);
+
+    return (no == 1)? 1:0;
+  }
+
+  private static int maxDivide(int a, int b) {
+    while (a%b == 0){
+      a = a/b;
+    }
+    return a;
   }
 }
