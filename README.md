@@ -14,6 +14,7 @@ Exercise and algorithms for common problems
   * Huffman Coding
 * Math Algorithms
   * Area of Circle
+  * Catalan Numbers
   * Factorial
   * Fibonacci series
   * Least Common Multiple
