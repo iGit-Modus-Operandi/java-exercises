@@ -21,6 +21,7 @@ Exercise and algorithms for common problems
   * Leonardo Numbers
   * Multiples
   * Multiplication Table
+  * Permutation Coefficient
   * Prime Numbers
   * Prime Test
   * Square Root
