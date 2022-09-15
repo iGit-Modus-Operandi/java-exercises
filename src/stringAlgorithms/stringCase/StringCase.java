@@ -25,6 +25,8 @@ public class StringCase {
   }
 
   private static boolean isUpperCase(String s) {
+//    Cal also be implemented by the noneMatch method:
+//    return s.chars().noneMatch(Character::isUpperCase);
     return s.chars().allMatch(Character::isLowerCase);
   }
 }
