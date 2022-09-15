@@ -14,6 +14,7 @@ Exercise and algorithms for common problems
   * Huffman Coding
 * Math Algorithms
   * Area of Circle
+  * Binomial Coefficient
   * Catalan Numbers
   * Factorial
   * Fibonacci series
@@ -54,6 +55,7 @@ Exercise and algorithms for common problems
   * Stooge Sort
 * String Algorithms
   * Anagram
+  * String Case
 * Widgets Algorithms
   * BMI Calculator
   * GPA Calculator
