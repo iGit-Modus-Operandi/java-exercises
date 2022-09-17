@@ -1,3 +1,5 @@
+/*This validation algorithm checks a given string's complexity, that is, if it uses lower and uppercase as well as digits.
+ This  is especially helpful in cases such as checking a given user password to increase complexity / guessing difficulty*/
 package stringAlgorithms.stringComplexity;
 
 public class StringComplexity {
