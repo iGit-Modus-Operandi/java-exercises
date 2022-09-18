@@ -56,6 +56,7 @@ Exercise and algorithms for common problems
 * String Algorithms
   * Anagram
   * String Case
+  * String Complexity
 * Widgets Algorithms
   * BMI Calculator
   * GPA Calculator
