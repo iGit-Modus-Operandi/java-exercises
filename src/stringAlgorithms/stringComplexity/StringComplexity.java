@@ -6,6 +6,11 @@ public class StringComplexity {
 
   public static void main(String[] args) {
     System.out.println(stringComplexity("Hell0"));
+    System.out.println(stringComplexity("Hello"));
+    System.out.println(stringComplexity("hellO"));
+    System.out.println(stringComplexity("HeLLo"));
+    System.out.println(stringComplexity("hello"));
+    System.out.println(stringComplexity(" "));
   }
 
   private static boolean stringComplexity(String s) {
