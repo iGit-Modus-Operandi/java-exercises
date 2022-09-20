@@ -13,6 +13,12 @@ public class StringReversed {
     System.out.println(reverse(null));
     System.out.println(reverse("bazinga"));
     System.out.println(reverse("Live not on evil"));
+
+    System.out.println(reverse2("hello"));
+    System.out.println(reverse2(""));
+    System.out.println(reverse2(null));
+    System.out.println(reverse2("bazinga"));
+    System.out.println(reverse2("Live not on evil"));
   }
 
   private static String reverse(String s) {
@@ -26,5 +32,14 @@ public class StringReversed {
     }
 
     return reversed.toString();
+  }
+
+  private static String reverse2(String s) {
+    if (s == null || s.isEmpty()){
+      return s;
+    }
+
+    StringBuilder sb = new StringBuilder(s);
+      return sb.reverse().toString();
   }
 }
