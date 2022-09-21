@@ -58,6 +58,7 @@ Exercise and algorithms for common problems
   * String Case
   * String Complexity
   * String Normalization
+  * String Reversed
 * Widgets Algorithms
   * BMI Calculator
   * GPA Calculator
