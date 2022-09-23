@@ -15,6 +15,19 @@ public class CoinChange {
     System.out.println(count(coins, coins.length, sum));
   }
 
-  private static boolean count(int[] coins, int length, int sum) {
+  private static int count(int[] coins, int length, int sum) {
+    if (sum == 0){
+      return 1;
+    }
+
+    if (sum < 0){
+      return 0;
+    }
+
+    if (length < 0){
+      return 0;
+    }
+
+    return count(coins, length - 1, sum) + count(coins, length, sum - coins[length - 1]);
   }
 }
