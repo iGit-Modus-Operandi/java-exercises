@@ -5,6 +5,7 @@ Exercise and algorithms for common problems
 * Dynamic Programming
   * Coin Change
   * Friends Pairing
+  * Subset Sum
 * Game Algorithms
   * Hangman
   * Rock Paper Scissor
