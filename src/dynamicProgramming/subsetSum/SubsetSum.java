@@ -25,5 +25,19 @@ public class SubsetSum {
   }
 
   private static boolean isSubsetSum(int[] set, int length, int sum) {
+    if (sum == 0){
+      return true;
+    }
+
+    if (length == 0){
+      return false;
+    }
+
+    if (set[length - 1] > sum){
+      return isSubsetSum(set, length - 1, sum);
+    }
+
+    return isSubsetSum(set, length - 1, sum) || isSubsetSum(set, length - 1, sum - set[length - 1]);
+
   }
 }
