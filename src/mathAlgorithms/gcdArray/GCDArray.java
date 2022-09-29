@@ -16,6 +16,22 @@ public class GCDArray {
     System.out.println(findGCD(numbers, length));
   }
 
-  private static boolean findGCD(int[] numbers, int length) {
+  private static int findGCD(int[] numbers, int length) {
+    int result = numbers[0];
+    for (int element: numbers) {
+      result = gcd(result, element);
+
+      if (result == 1){
+        return 1;
+      }
+    }
+    return result;
+  }
+
+  private static int gcd(int result, int element) {
+    if (result == 0){
+      return element;
+    }
+    return gcd(element % result, result);
   }
 }
