@@ -1,10 +1,9 @@
 /*
  * CONDITION: Given an array, numbers[], of n elements, search for a given value from user input.
- * TIME COMPLEXITY: O(n)
+ * TIME COMPLEXITY: O(N)
  * AUXILIARY SPACE: O(1)
  * SOLUTION:
- * 1. Starting from the leftmost element of the array, traverse each element while comparing
- * the value of user input.
+ * 1. Starting from the leftmost element of the array, traverse each element while comparing the value of user input.
  * 2. If an element matches the user input value, return the index.
  * 3. If no match was found, return -1.
  */

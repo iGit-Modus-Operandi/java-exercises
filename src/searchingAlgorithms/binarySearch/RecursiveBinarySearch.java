@@ -1,15 +1,15 @@
 /*
  * CONDITION: Given a sorted array, numbers[], of n elements, search for a given value from user input.
- * TIME COMPLEXITY: O(log n)
- * AUXILIARY SPACE: O(log n)
+ * TIME COMPLEXITY: O(log N)
+ * AUXILIARY SPACE: O(log N)
  * SOLUTION:
  * 1. Starting from the mid element of the array, compare the element with the value of user input.
  * 2. If the value of the element matches the user input value, return the index.
  * 3. If the value of the search element from the user input is less than the mid element, narrow the
  * interval to the lower half of the array elements.
- * 3. Otherwise, narrow the interval to the upper half of the array elements.
- * 4. Repeatedly compare with the mid element of the new interval until interval is empty.
- * 5. If no match was found, return -1.
+ * 4. Otherwise, narrow the interval to the upper half of the array elements.
+ * 5. Repeatedly compare with the mid element of the new interval until interval is empty.
+ * 6. If no match was found, return -1.
  */
 
 package searchingAlgorithms.binarySearch;
