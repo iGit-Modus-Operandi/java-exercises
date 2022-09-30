@@ -22,6 +22,7 @@ Exercise and algorithms for common problems
   * Catalan Numbers
   * Factorial
   * Fibonacci series
+  * GCD Array
   * Least Common Multiple
   * Leonardo Numbers
   * Multiples
