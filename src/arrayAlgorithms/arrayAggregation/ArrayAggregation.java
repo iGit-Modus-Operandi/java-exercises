@@ -3,6 +3,8 @@ package arrayAlgorithms.arrayAggregation;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.function.IntPredicate;
+import java.util.stream.Stream;
 
 public class ArrayAggregation {
 
@@ -45,5 +47,10 @@ public class ArrayAggregation {
   }
 
   private static int[] findEvenNums1(int[] numbers1, int[] numbers2) {
+    IntPredicate isEvenPred = num -> num % 2 == 0;
+    return Stream.of(numbers1, numbers2)
+        .flatMapToInt(Arrays::stream)
+        .filter(isEvenPred)
+        .toArray();
   }
 }
