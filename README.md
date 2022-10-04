@@ -2,6 +2,8 @@
 Exercise and algorithms for common problems
 
 
+* Array algorithms
+  * Array Aggregation
 * Dynamic Programming
   * Coin Change
   * Friends Pairing
