@@ -20,5 +20,12 @@ public class ArrayReversal {
   }
 
   private static int[] reverseArray(int[] numbers) {
+    int[] reverse = new int[numbers.length];
+
+    for (int i = 0; i < numbers.length; i++) {
+      reverse[i] = numbers[numbers.length - 1 - i];
+    }
+
+    return reverse;
   }
 }
