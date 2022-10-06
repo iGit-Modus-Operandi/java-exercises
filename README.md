@@ -4,6 +4,7 @@ Exercise and algorithms for common problems
 
 * Array algorithms
   * Array Aggregation
+  * Array Reversal
 * Dynamic Programming
   * Coin Change
   * Friends Pairing
