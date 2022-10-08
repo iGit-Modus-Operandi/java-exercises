@@ -21,8 +21,10 @@ public class BuiltInMethods {
     //Finding the existence of an element or value within a list
     System.out.println(sins.contains("Disgust"));
 
+    // Remove first element/item added on the list
     sins.removeFirst();
 
+    // forEach loop that iterates through the list and prints every element
     for (String sin: sins) {
       System.out.print(sin + "-->");
     }
