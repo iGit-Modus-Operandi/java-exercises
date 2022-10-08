@@ -20,5 +20,11 @@ public class BuiltInMethods {
 
     //Finding the existence of an element or value within a list
     System.out.println(sins.contains("Disgust"));
+
+    sins.removeFirst();
+
+    for (String sin: sins) {
+      System.out.print(sin + "-->");
+    }
   }
 }
