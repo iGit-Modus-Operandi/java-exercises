@@ -19,8 +19,6 @@ Exercise and algorithms for common problems
   * Activity Selection
   * Egyptian Fraction
   * Huffman Coding
-* Linked List Algorithms
-  * Built In Methods
 * Math Algorithms
   * Area of Circle
   * Binomial Coefficient
