@@ -25,6 +25,7 @@ Exercise and algorithms for common problems
   * Catalan Numbers
   * Factorial
   * Fibonacci series
+  * Float to Whole Number Conversion Factor
   * GCD Array
   * Least Common Multiple
   * Leonardo Numbers
