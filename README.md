@@ -19,6 +19,7 @@ Exercise and algorithms for common problems
   * Activity Selection
   * Egyptian Fraction
   * Huffman Coding
+  * Maximum Composite Numbers Split
 * Math Algorithms
   * Area of Circle
   * Binomial Coefficient
