@@ -1,6 +1,5 @@
 package greedyAlgorithms.policeAndThief;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class PoliceCatchThief {
