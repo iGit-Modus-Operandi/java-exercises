@@ -20,6 +20,7 @@ Exercise and algorithms for common problems
   * Egyptian Fraction
   * Huffman Coding
   * Maximum Composite Numbers Split
+  * Police and Thief
 * Math Algorithms
   * Area of Circle
   * Binomial Coefficient
