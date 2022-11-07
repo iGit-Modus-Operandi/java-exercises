@@ -14,6 +14,8 @@ public class WaterConnection {
   static List<Integer> b = new ArrayList<>();
   static List<Integer> c = new ArrayList<>();
 
+  static int ans;
+
   public static void main(String[] args) {
     numberOfHouses = 9;
     numberOfPipes = 6;
@@ -42,5 +44,23 @@ public class WaterConnection {
     a = new ArrayList<Integer>();
     b = new ArrayList<Integer>();
     c = new ArrayList<Integer>();
+
+    for (int j = 1; j < numberOfHouses; ++j) {
+      if (endingVertexOfPipes[j] == 0 && startingVertexOfPipes[j] > 0){
+        ans = 1000000000;
+        int w = dfs(j);
+        a.add(j);
+        b.add(w);
+        c.add(ans);
+      }
+    }
+    System.out.println(a.size());
+
+    for (int j = 0; j < a.size(); ++j) {
+      System.out.println(a.get(j) + " " + b.get(j) + " " + c.get(j));
+    }
+  }
+
+  private static int dfs(int w) {
   }
 }
