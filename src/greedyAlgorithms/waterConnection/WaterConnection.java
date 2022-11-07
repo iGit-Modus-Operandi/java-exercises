@@ -62,5 +62,14 @@ public class WaterConnection {
   }
 
   private static int dfs(int w) {
+    if (startingVertexOfPipes[w] == 0){
+      return w;
+    }
+
+    if (diameterOfPipes[w] < ans){
+      ans = diameterOfPipes[w];
+    }
+
+    return dfs(startingVertexOfPipes[w]);
   }
 }
