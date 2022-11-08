@@ -21,6 +21,7 @@ Exercise and algorithms for common problems
   * Huffman Coding
   * Maximum Composite Numbers Split
   * Police and Thief
+  * Water Connection Problem
 * Math Algorithms
   * Area of Circle
   * Binomial Coefficient
