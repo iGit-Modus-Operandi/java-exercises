@@ -1,6 +1,7 @@
 package greedyAlgorithms.jobSequence;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class JobSequence {
 
@@ -27,5 +28,28 @@ public class JobSequence {
     System.out.println("Following is maximum profit sequence of jobs");
 
     JobSequence jobSequence = new JobSequence();
+
+    jobSequence.printJobSchedule(arr, 3);
+  }
+
+  private void printJobSchedule(ArrayList<JobSequence> arr, int t) {
+    Collections.sort(arr, (a, b) -> b.profit - a.profit);
+    boolean result[] = new boolean[t];
+    char job[] = new char[t];
+
+    for (int i = 0; i < arr.size(); i++) {
+      for (int j = Math.min(t - 1, arr.get(i).deadline - 1); j >= 0 ; j--) {
+        if (result[j] == false){
+          result[j] = true;
+          job[j] = arr.get(i).id;
+          break;
+        }
+      }
+    }
+
+    for (char jb: job) {
+      System.out.println(jb + " ");
+    }
+    System.out.println();
   }
 }
