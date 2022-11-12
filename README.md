@@ -19,6 +19,7 @@ Exercise and algorithms for common problems
   * Activity Selection
   * Egyptian Fraction
   * Huffman Coding
+  * Job Sequence Problem
   * Maximum Composite Numbers Split
   * Police and Thief
   * Water Connection Problem
