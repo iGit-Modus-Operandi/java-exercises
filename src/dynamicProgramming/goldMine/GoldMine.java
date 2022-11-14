@@ -11,6 +11,15 @@ public class GoldMine {
     System.out.println(getMaxGold(gold, n, m));
   }
 
-  private static boolean getMaxGold(int[][] gold, int n, int m) {
+  private static int getMaxGold(int[][] gold, int n, int m) {
+    int maxGold = 0;
+    for (int i = 0; i < n; i++) {
+      int goldCollected = collectGold(gold, i, 0, n, m);
+      maxGold = Math.max(maxGold, goldCollected);
+    }
+    return maxGold;
+  }
+
+  private static int collectGold(int[][] gold, int i, int i1, int n, int m) {
   }
 }
