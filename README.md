@@ -8,6 +8,7 @@ Exercise and algorithms for common problems
 * Dynamic Programming
   * Coin Change
   * Friends Pairing
+  * Gold Mine
   * Subset Sum
 * Game Algorithms
   * Hangman
