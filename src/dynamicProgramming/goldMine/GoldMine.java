@@ -20,6 +20,16 @@ public class GoldMine {
     return maxGold;
   }
 
-  private static int collectGold(int[][] gold, int i, int i1, int n, int m) {
+  private static int collectGold(int[][] gold, int x, int y, int n, int m) {
+    //base condition
+    if ((x < 0) || (x == n) || (y == m)){
+      return 0;
+    }
+
+    int rightUpperDiagonal = collectGold(gold, x - 1, y + 1, n, m);
+    int right = collectGold(gold, x ,y + 1, n ,m);
+    int rightLowerDiagonal = collectGold(gold, x + 1, y + 1, n, m);
+
+    return gold[x][y] + Math.max(Math.max(rightUpperDiagonal, rightLowerDiagonal), right);
   }
 }
