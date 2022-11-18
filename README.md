@@ -26,6 +26,7 @@ Exercise and algorithms for common problems
   * Water Connection Problem
 * Math Algorithms
   * Area of Circle
+  * Bell Numbers
   * Binomial Coefficient
   * Catalan Numbers
   * Factorial
