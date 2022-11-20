@@ -37,6 +37,7 @@ Exercise and algorithms for common problems
   * Leonardo Numbers
   * Multiples
   * Multiplication Table
+  * Perfect Sum
   * Permutation Coefficient
   * Prime Numbers
   * Prime Test
