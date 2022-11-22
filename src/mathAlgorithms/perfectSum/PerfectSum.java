@@ -1,5 +1,7 @@
 package mathAlgorithms.perfectSum;
 
+import java.util.ArrayList;
+
 public class PerfectSum {
   static boolean[][] dp;
 
@@ -33,5 +35,11 @@ public class PerfectSum {
       System.out.println("There are no subsets with" + " sum " + sum);
       return;
     }
+
+    ArrayList<Integer> p = new ArrayList<>();
+    printSubsetsRec(arr, length - 1, sum, p);
+  }
+
+  private static void printSubsetsRec(int[] arr, int i, int sum, ArrayList<Integer> p) {
   }
 }
