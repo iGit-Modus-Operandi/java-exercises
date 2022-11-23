@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class PerfectSum {
   static boolean[][] dp;
 
+  static void display(ArrayList<Integer> v){
+    System.out.println(v);
+  }
+
   public static void main(String[] args) {
     int[] arr = {1, 2, 3, 4, 5};
     int sum = 10;
@@ -41,5 +45,9 @@ public class PerfectSum {
   }
 
   private static void printSubsetsRec(int[] arr, int i, int sum, ArrayList<Integer> p) {
+    if (i == 0 && sum != 0 && dp[0][sum]){
+      p.add(arr[i]);
+      display(p);
+    }
   }
 }
