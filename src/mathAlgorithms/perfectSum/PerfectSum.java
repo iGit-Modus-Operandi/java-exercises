@@ -48,6 +48,25 @@ public class PerfectSum {
     if (i == 0 && sum != 0 && dp[0][sum]){
       p.add(arr[i]);
       display(p);
+      p.clear();
+      return;
+    }
+
+    if (i == 0 && sum == 0){
+      display(p);
+      p.clear();
+      return;
+    }
+
+    if (dp[i - 1][sum]){
+      ArrayList<Integer> b = new ArrayList<>();
+      b.addAll(p);
+      printSubsetsRec(arr, i - 1, sum, b);
+    }
+
+    if (sum >= arr[i] && dp[i - 1][sum - arr[i]]){
+      p.add(arr[i]);
+      printSubsetsRec(arr, i - 1, sum - arr[i], p);
     }
   }
 }
