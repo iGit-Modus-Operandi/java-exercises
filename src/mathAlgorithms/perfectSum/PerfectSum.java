@@ -1,3 +1,5 @@
+/* This problem is an extension of Subset Sum problem where you not only need to find if there is a
+* subset with the given sum but also to print all subsets within a given sum*/
 package mathAlgorithms.perfectSum;
 
 import java.util.ArrayList;
