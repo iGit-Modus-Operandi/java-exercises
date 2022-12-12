@@ -87,8 +87,8 @@ Exercise and algorithms for common problems
 * [FIGURE] - Illustration of the concept
 
 #### References
-https://www.youtube.com/c/CodingwithJohn
-https://www.youtube.com/c/programmingwithmosh
-https://www.geeksforgeeks.org/searching-algorithms/
-https://www.geeksforgeeks.org/sorting-algorithms/?ref=ghm
-https://www.geeksforgeeks.org/greedy-algorithms/?ref=lbp
+* https://www.youtube.com/c/CodingwithJohn
+* https://www.youtube.com/c/programmingwithmosh
+* https://www.geeksforgeeks.org/searching-algorithms/
+* https://www.geeksforgeeks.org/sorting-algorithms/?ref=ghm
+* https://www.geeksforgeeks.org/greedy-algorithms/?ref=lbp
