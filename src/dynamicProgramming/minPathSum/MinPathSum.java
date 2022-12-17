@@ -12,7 +12,11 @@ public class MinPathSum {
   }
 
   private static int helper(int[][] triangle, int i, int j) {
+    if (i == triangle.length){
+      return 0;
+    }
     int min;
+    min = triangle[i][j] + Math.min(helper(triangle, i + 1, j), helper(triangle, i + 1, j + 1));
 
     return min;
   }
