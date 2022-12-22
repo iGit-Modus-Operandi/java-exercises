@@ -9,6 +9,7 @@ Exercise and algorithms for common problems
   * Coin Change
   * Friends Pairing
   * Gold Mine
+  * Maximum Length Snake Sequence
   * Maximum Path Sum
   * Minimum Path SUm
   * Subset Sum
