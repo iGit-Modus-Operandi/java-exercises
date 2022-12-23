@@ -1,5 +1,8 @@
 package dynamicProgramming.maxLengthSnakeSequence;
 
+import java.awt.Point;
+import java.util.List;
+
 public class MaxLengthSnakeSequence {
 
   static int M = 4;
@@ -34,9 +37,23 @@ public class MaxLengthSnakeSequence {
             }
           }
 
-          if (j > 0 && Math.abs())
+          if (j > 0 && Math.abs(matrix[i][j - 1] - matrix[i][j]) == 1){
+            lookup[i][j] = Math.max(lookup[i][j], lookup[i][j - 1] + 1);
+            
+            if (max_len < lookup[i][j]){
+              max_len = lookup[i][j];
+              max_row = i;
+              max_col = j;
+            }
+          }
         }
       }
     }
+    System.out.println("Maximum length of Snake " + "sequence is: " + max_len + "\n");
+    
+    List<Point> path = findPath(lookup, matrix, max_row, max_col);
+  }
+
+  private static List<Point> findPath(int[][] lookup, int[][] matrix, int max_row, int max_col) {
   }
 }
