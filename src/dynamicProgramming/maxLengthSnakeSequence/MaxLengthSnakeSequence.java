@@ -52,6 +52,10 @@ public class MaxLengthSnakeSequence {
     System.out.println("Maximum length of Snake " + "sequence is: " + max_len + "\n");
     
     List<Point> path = findPath(lookup, matrix, max_row, max_col);
+    System.out.println("Snake sequence is: ");
+    for (Point it: path) {
+      System.out.println("\n" + matrix[it.x][it.y] + " (" + it.x + ", " + it.y + ")");
+    }
   }
 
   private static List<Point> findPath(int[][] lookup, int[][] matrix, int max_row, int max_col) {
