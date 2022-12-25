@@ -9,6 +9,14 @@ public class MaxLengthSnakeSequence {
   static int M = 4;
   static int N = 4;
 
+  static class Point{
+    int x, y;
+    public Point(int x, int y){
+      this.x = x;
+      this.y = y;
+    }
+  }
+
   public static void main(String[] args) {
     int[][] matrix = {
         {9, 6, 5, 2},
