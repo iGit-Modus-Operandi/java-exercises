@@ -1,6 +1,7 @@
 package dynamicProgramming.maxLengthSnakeSequence;
 
 import java.awt.Point;
+import java.util.LinkedList;
 import java.util.List;
 
 public class MaxLengthSnakeSequence {
@@ -58,6 +59,23 @@ public class MaxLengthSnakeSequence {
     }
   }
 
-  private static List<Point> findPath(int[][] lookup, int[][] matrix, int max_row, int max_col) {
+  private static List<Point> findPath(int[][] grid, int[][] matrix, int i, int j) {
+    List<Point> path = new LinkedList<>();
+    Point pt = new Point(i, j);
+    path.add(0, pt);
+
+    while (grid[i][j] != 0){
+      if (i > 0 && grid[i][j] - 1 == grid[i - 1][j]){
+        pt = new Point(i - 1, j);
+        path.add(0, pt);
+        i--;
+      }
+      else if (j > 0 && grid[i][j] - 1 == grid[i][j - 1]){
+        pt = new Point(i, j - 1);
+        path.add(0, pt);
+        j--;
+      }
+    }
+    return path;
   }
 }
