@@ -12,6 +12,7 @@ Exercise and algorithms for common problems
   * Maximum Length Snake Sequence
   * Maximum Path Sum
   * Minimum Path SUm
+  * Step Count to Nth Stairs
   * Subset Sum
 * Game Algorithms
   * Hangman
