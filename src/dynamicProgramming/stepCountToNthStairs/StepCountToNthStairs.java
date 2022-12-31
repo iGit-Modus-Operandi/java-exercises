@@ -11,6 +11,15 @@ public class StepCountToNthStairs {
     System.out.println(countSteps(steps));
   }
 
-  private static void countSteps(int steps) {
+  private static int countSteps(int steps) {
+    if (steps == 0){
+      return 1;
+    }
+    else if (steps < 0){
+      return 0;
+    }
+    else{
+      return countSteps(steps - 3) + countSteps(steps - 2) + countSteps(steps - 1);
+    }
   }
 }
