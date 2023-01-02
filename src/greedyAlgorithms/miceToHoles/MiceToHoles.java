@@ -15,6 +15,11 @@ public class MiceToHoles {
     holes.add(0);
     holes.add(5);
 
-    System.out.println("The last mouse gets into " + "the hole in time: ");
+    System.out.println("The last mouse gets into " + "the hole in time: " + assignHole(mice, holes));
+  }
+
+  private static int assignHole(ArrayList<Integer> mice, ArrayList<Integer> holes) {
+    int max = 0;
+    return Math.abs(max);
   }
 }
