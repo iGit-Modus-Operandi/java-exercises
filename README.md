@@ -26,6 +26,7 @@ Exercise and algorithms for common problems
   * Huffman Coding
   * Job Sequence Problem
   * Maximum Composite Numbers Split
+  * Mice to Holes
   * Police and Thief
   * Water Connection Problem
 * Math Algorithms
