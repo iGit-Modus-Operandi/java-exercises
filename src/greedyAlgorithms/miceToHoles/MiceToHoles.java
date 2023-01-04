@@ -1,6 +1,7 @@
 package greedyAlgorithms.miceToHoles;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MiceToHoles {
 
@@ -19,7 +20,22 @@ public class MiceToHoles {
   }
 
   private static int assignHole(ArrayList<Integer> mice, ArrayList<Integer> holes) {
+    if (mice.size() != holes.size()){
+      return -1;
+    }
+
+    Collections.sort(mice);
+    Collections.sort(holes);
+
+    int size = mice.size();
     int max = 0;
+
+    for (int i = 0; i < size; i++) {
+      if (max < Math.abs(mice.get(i) - holes.get(i))){
+        max = Math.abs(mice.get(i) - holes.get(i));
+      }
+    }
+
     return Math.abs(max);
   }
 }
