@@ -46,6 +46,7 @@ Exercise and algorithms for common problems
   * Permutation Coefficient
   * Prime Numbers
   * Prime Test
+  * Smith Numbers
   * Square Root
   * Ugly Numbers
 * Searching Algorithms
