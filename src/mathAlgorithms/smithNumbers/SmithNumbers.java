@@ -24,6 +24,10 @@ public class SmithNumbers {
     }
   }
 
-  private static boolean isSmith(int i) {
+  private static boolean isSmith(int n) {
+    int orig_num = n;
+    int pDigitSum = 0;
+    int sumDigits = 0;
+    return (pDigitSum == sumDigits);
   }
 }
