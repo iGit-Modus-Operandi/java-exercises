@@ -1,8 +1,11 @@
 package mathAlgorithms.smithNumbers;
 
+import java.util.Vector;
+
 public class SmithNumbers {
 
   static int MAX = 10000;
+  static Vector<Integer> primes = new Vector<>();
 
   public static void main(String[] args) {
     sieveOfSundaram();
@@ -22,11 +25,20 @@ public class SmithNumbers {
         marked[j] = true;
       }
     }
+    primes.addElement(2);
+    for (int i = 1; i < MAX / 2; i++) {
+      if (marked[i] == false){
+        primes.addElement(2 * i + 1);
+      }
+    }
   }
 
   private static boolean isSmith(int n) {
     int orig_num = n;
     int pDigitSum = 0;
+    for (int i = 0; primes.get(i) < ; i++) {
+
+    }
     int sumDigits = 0;
     return (pDigitSum == sumDigits);
   }
