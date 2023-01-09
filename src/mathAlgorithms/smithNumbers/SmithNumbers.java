@@ -36,10 +36,30 @@ public class SmithNumbers {
   private static boolean isSmith(int n) {
     int orig_num = n;
     int pDigitSum = 0;
-    for (int i = 0; primes.get(i) < ; i++) {
-
+    for (int i = 0; primes.get(i) <= n/2 ; i++) {
+      while(n % primes.get(i) == 0){
+        int p = primes.get(i);
+        n = n / p;
+        while(p > 0){
+          pDigitSum += (p % 10);
+          p = p / 10;
+        }
+      }
     }
+
+    if(n != 1 && n != orig_num){
+      while(n > 0){
+        pDigitSum = pDigitSum + n % 10;
+        n = n / 10;
+      }
+    }
+
     int sumDigits = 0;
+    while(orig_num > 0){
+      sumDigits = sumDigits + orig_num % 10;
+      orig_num = orig_num / 10;
+    }
+
     return (pDigitSum == sumDigits);
   }
 }
