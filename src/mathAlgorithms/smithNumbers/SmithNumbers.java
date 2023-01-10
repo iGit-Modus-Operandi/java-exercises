@@ -25,7 +25,9 @@ public class SmithNumbers {
         marked[j] = true;
       }
     }
+
     primes.addElement(2);
+
     for (int i = 1; i < MAX / 2; i++) {
       if (marked[i] == false){
         primes.addElement(2 * i + 1);
@@ -36,10 +38,12 @@ public class SmithNumbers {
   private static boolean isSmith(int n) {
     int orig_num = n;
     int pDigitSum = 0;
+
     for (int i = 0; primes.get(i) <= n/2 ; i++) {
       while(n % primes.get(i) == 0){
         int p = primes.get(i);
         n = n / p;
+
         while(p > 0){
           pDigitSum += (p % 10);
           p = p / 10;
