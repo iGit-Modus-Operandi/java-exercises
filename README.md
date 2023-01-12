@@ -47,6 +47,7 @@ Exercise and algorithms for common problems
   * Prime Numbers
   * Prime Test
   * Smith Numbers
+  * Sphenic Numbers
   * Square Root
   * Ugly Numbers
 * Searching Algorithms
