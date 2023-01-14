@@ -1,8 +1,8 @@
-package mathAlgorithms.leonardoNumber;
+package mathAlgorithms.leonardoNumbers;
 
 import java.util.Scanner;
 
-public class LeonardoNumber {
+public class LeonardoNumbers {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
