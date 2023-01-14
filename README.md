@@ -38,6 +38,7 @@ Exercise and algorithms for common problems
   * Fibonacci series
   * Float to Whole Number Conversion Factor
   * GCD Array
+  * Hoax Numbers
   * Least Common Multiple
   * Leonardo Numbers
   * Multiples
