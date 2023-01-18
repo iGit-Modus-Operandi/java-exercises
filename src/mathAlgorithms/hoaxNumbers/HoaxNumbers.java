@@ -27,12 +27,13 @@ public class HoaxNumbers {
       }
     }
 
-    for (int sum_n = 0; n > 0; sum_n += n % 10, n /= 10) {
-      return sum_n == all_pf_sum;
-    }
+    int sum_n;
+    for ( sum_n = 0; n > 0; sum_n += n % 10, n /= 10);
+    return sum_n == all_pf_sum;
   }
 
   private static List<Integer> primeFactors(int n) {
+
   }
 
 }
