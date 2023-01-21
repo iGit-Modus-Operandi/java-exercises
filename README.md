@@ -14,6 +14,7 @@ Exercise and algorithms for common problems
   * Minimum Path SUm
   * Step Count to nth Stairs
   * Subset Sum
+  * Tile Stacking
 * Game Algorithms
   * Hangman
   * Rock Paper Scissor
