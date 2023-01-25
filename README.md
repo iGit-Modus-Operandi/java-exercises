@@ -6,6 +6,7 @@ Exercise and algorithms for common problems
   * Array Aggregation
   * Array Reversal
 * Dynamic Programming
+  * Box Stacking
   * Coin Change
   * Friends Pairing
   * Gold Mine
