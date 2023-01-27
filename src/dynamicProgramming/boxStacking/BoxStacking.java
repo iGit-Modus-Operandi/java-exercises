@@ -27,6 +27,15 @@ public class BoxStacking {
     System.out.println("The maximum possible height of the stack is " + maxStackHeight(arr, 4));
   }
 
-  private static String maxStackHeight(Box[] arr, int i) {
+  private static String maxStackHeight(Box[] arr, int n) {
+    Box[] rot = new Box[n * 3];
+
+    for (int i = 0; i < n; i++) {
+      Box box = arr[i];
+
+      rot[3 * i] = new Box(box.h, Math.max(box.w, box.d), Math.min(box.w, box.d));
+      rot[3 * i + 1] = new Box(box.w, Math.max(box.h, box.d), Math.min(box.h, box.d));
+      rot[3 * i + 2] = new Box(box.d, Math.max(box.w, box.h), Math.min(box.w, box.h));
+    }
   }
 }
