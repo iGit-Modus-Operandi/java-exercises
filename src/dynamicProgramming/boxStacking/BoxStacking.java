@@ -1,5 +1,7 @@
 package dynamicProgramming.boxStacking;
 
+import java.util.Arrays;
+
 public class BoxStacking {
 
   private static class Box implements Comparable<Box>{
@@ -27,7 +29,7 @@ public class BoxStacking {
     System.out.println("The maximum possible height of the stack is " + maxStackHeight(arr, 4));
   }
 
-  private static String maxStackHeight(Box[] arr, int n) {
+  private static int maxStackHeight(Box[] arr, int n) {
     Box[] rot = new Box[n * 3];
 
     for (int i = 0; i < n; i++) {
@@ -37,5 +39,38 @@ public class BoxStacking {
       rot[3 * i + 1] = new Box(box.w, Math.max(box.h, box.d), Math.min(box.h, box.d));
       rot[3 * i + 2] = new Box(box.d, Math.max(box.w, box.h), Math.min(box.w, box.h));
     }
+
+    for (int i = 0; i < rot.length; i++) {
+      rot[i].area = rot[i].w * rot[i].d;
+    }
+
+    Arrays.sort(rot);
+    int count = 3 * n;
+    int[] msh = new int[count];
+
+    for (int i = 0; i < count; i++) {
+      msh[i] = rot[i].h;
+    }
+
+    for (int i = 0; i < count; i++) {
+      msh[i] = 0;
+      Box box = rot[i];
+      int val = 0;
+
+      for (int j = 0; j < i; j++) {
+        Box prevBox = rot[j];
+        if(box.w < prevBox.w && box.d < prevBox.d){
+          val = Math.max(val, msh[j]);
+        }
+      }
+      msh[i] = val + box.h;
+    }
+
+    int max = -1;
+
+    for (int i = 0; i < count; i++) {
+      max = Math.max(max, msh[i]);
+    }
+    return max;
   }
 }
