@@ -8,6 +8,7 @@ Exercise and algorithms for common problems
 * Dynamic Programming
   * Box Stacking
   * Coin Change
+  * Floyd Warshall
   * Friends Pairing
   * Gold Mine
   * Maximum Length Snake Sequence
