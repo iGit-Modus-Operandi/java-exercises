@@ -9,5 +9,11 @@ public class FloydWarshall {
         {INF, 0, 3, INF},
         {INF, INF, 0, 1},
         {INF, INF, INF, 0}};
+
+    FloydWarshall a = new FloydWarshall();
+    a.floydWarshall(graph);
+  }
+
+  private static void floydWarshall(int[][] graph) {
   }
 }
