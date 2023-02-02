@@ -15,5 +15,14 @@ public class FloydWarshall {
   }
 
   private static void floydWarshall(int[][] graph) {
+    for (int k = 0; k < V; k++) {
+      for (int i = 0; i < V; i++) {
+        for (int j = 0; j < V; j++) {
+          if(graph[i][k] + graph[k][j] < graph[i][j]){
+            graph[i][j] = graph[i][k] + graph[k][j];
+          }
+        }
+      }
+    }
   }
 }
