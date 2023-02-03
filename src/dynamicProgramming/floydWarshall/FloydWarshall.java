@@ -24,5 +24,20 @@ public class FloydWarshall {
         }
       }
     }
+    printSolution(graph);
+  }
+
+  private static void printSolution(int[][] graph) {
+    System.out.println("The following matrix shows the shortest distances between every pair of vertices");
+    for (int i = 0; i < V; ++i) {
+      for (int j = 0; j < V; j++) {
+        if (graph[i][j] == INF) {
+          System.out.println("INF ");
+        } else {
+          System.out.println(graph[i][j] + " ");
+        }
+        System.out.println();
+      }
+    }
   }
 }
