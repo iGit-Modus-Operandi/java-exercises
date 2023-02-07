@@ -2,9 +2,11 @@
 Exercise and algorithms for common problems
 
 
-* Array algorithms
+* Array Algorithms
   * Array Aggregation
   * Array Reversal
+* Backtracking Algorithms
+  * Knight's Tour
 * Dynamic Programming
   * Box Stacking
   * Coin Change
