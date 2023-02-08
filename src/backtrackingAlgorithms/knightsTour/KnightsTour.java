@@ -31,7 +31,16 @@ public class KnightsTour {
     return true;
   }
 
-  private static boolean solveKTUtil(int i, int i1, int i2, int[][] sol, int[] xMove, int[] yMove) {
+  private static boolean solveKTUtil(int x, int y, int movei, int[][] sol, int[] xMove, int[] yMove) {
+    int k, next_x, next_y;
+    if (movei == N * N){
+      return true;
+    }
+    for (int k = 0; k < 8; k++) {
+      next_x = x + xMove[k];
+      next_y = y + yMove[k];
+
+    }
   }
 
   private static void printSolution(int[][] sol) {
