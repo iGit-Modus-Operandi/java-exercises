@@ -39,8 +39,13 @@ public class KnightsTour {
     for (int k = 0; k < 8; k++) {
       next_x = x + xMove[k];
       next_y = y + yMove[k];
+      if(isSafe(next_x, next_y, sol)){
 
+      }
     }
+  }
+
+  private static boolean isSafe(int x, int y, int[][] sol) {
   }
 
   private static void printSolution(int[][] sol) {
