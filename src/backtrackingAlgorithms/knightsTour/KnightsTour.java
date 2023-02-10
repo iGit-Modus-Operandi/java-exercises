@@ -36,13 +36,19 @@ public class KnightsTour {
     if (movei == N * N){
       return true;
     }
-    for (int k = 0; k < 8; k++) {
+    for (k = 0; k < 8; k++) {
       next_x = x + xMove[k];
       next_y = y + yMove[k];
       if(isSafe(next_x, next_y, sol)){
-
+        sol[next_x][next_y] = movei;
+        if(solveKTUtil(next_x, next_y, movei + 1, sol, xMove, yMove)){
+          return true;
+        } else {
+          sol[next_x][next_y] = -1;
+        }
       }
     }
+    return false;
   }
 
   private static boolean isSafe(int x, int y, int[][] sol) {
