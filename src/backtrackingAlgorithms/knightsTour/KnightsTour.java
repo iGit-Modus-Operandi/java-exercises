@@ -52,6 +52,7 @@ public class KnightsTour {
   }
 
   private static boolean isSafe(int x, int y, int[][] sol) {
+    return (x >= 0 && x < N && y >= 0 && y < N && sol[x][y] == -1);
   }
 
   private static void printSolution(int[][] sol) {
