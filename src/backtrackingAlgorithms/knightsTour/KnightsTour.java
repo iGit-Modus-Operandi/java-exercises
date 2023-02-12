@@ -56,5 +56,11 @@ public class KnightsTour {
   }
 
   private static void printSolution(int[][] sol) {
+    for (int x = 0; x < N; x++) {
+      for (int y = 0; y < N; y++) {
+        System.out.println(sol[x][y] + " ");
+      }
+      System.out.println();
+    }
   }
 }
