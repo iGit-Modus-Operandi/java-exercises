@@ -15,5 +15,7 @@ public class RatMaze {
   }
 
   private static void solveMaze(int[][] maze) {
+    int[][] sol = new int[N][N];
+    if(solveMazeUtil();)
   }
 }
