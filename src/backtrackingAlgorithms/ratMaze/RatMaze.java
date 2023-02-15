@@ -14,8 +14,25 @@ public class RatMaze {
     solveMaze(maze);
   }
 
-  private static void solveMaze(int[][] maze) {
+  private static boolean solveMaze(int[][] maze) {
     int[][] sol = new int[N][N];
-    if(solveMazeUtil();)
+    if(solveMazeUtil(maze, 0, 0, sol) == false){
+      System.out.println("Solution doesn't exist");
+      return false;
+    }
+    printSolution(sol);
+    return true;
+  }
+
+  private static void printSolution(int[][] sol) {
+    for (int i = 0; i < N; i++) {
+      for (int j = 0; j < N; j++) {
+        System.out.println(" " + sol[i][j] + " ");
+      }
+      System.out.println();
+    }
+  }
+
+  private static boolean solveMazeUtil(int[][] maze, int i, int i1, int[][] sol) {
   }
 }
