@@ -33,6 +33,22 @@ public class RatMaze {
     }
   }
 
-  private static boolean solveMazeUtil(int[][] maze, int i, int i1, int[][] sol) {
+  private static boolean solveMazeUtil(int[][] maze, int x, int y, int[][] sol) {
+    if (x == N - 1 && y == N - 1 && maze[x][y] == 1){
+      sol[x][y] = 1;
+      return true;
+    }
+
+    if (isSafe(maze, x, y) == true){
+      if (sol[x][y] == 1){
+        return false;
+      }
+      sol[x][y] = 1;
+
+    }
+    return false;
+  }
+
+  private static boolean isSafe(int[][] maze, int x, int y) {
   }
 }
