@@ -45,6 +45,15 @@ public class RatMaze {
       }
       sol[x][y] = 1;
 
+      if (solveMazeUtil(maze, x + 1, y, sol)){
+        return true;
+      }
+
+      if (solveMazeUtil(maze, x, y + 1, sol)){
+        return true;
+      }
+      sol[x][y] = 0;
+      return false;
     }
     return false;
   }
