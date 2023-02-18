@@ -59,5 +59,6 @@ public class RatMaze {
   }
 
   private static boolean isSafe(int[][] maze, int x, int y) {
+    return (x >= 0 && x < N && y > 0 && y < N && maze[x][y] == 1);
   }
 }
