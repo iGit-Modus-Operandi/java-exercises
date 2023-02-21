@@ -8,7 +8,24 @@ public class NQueen {
   }
 
   private boolean solveNQ() {
+    int board[][] = {{0, 0, 0, 0},
+        {0, 0, 0, 0},
+        {0, 0, 0, 0},
+        {0, 0, 0, 0},
+        {0, 0, 0, 0}};
+    if(solveNQUtil(board, 0) == false){
+      System.out.println("Solution does not exist");
+      return false;
+    }
+    
+    printSolution(board);
+    return true;
+  }
 
+  private boolean solveNQUtil(int[][] board, int i) {
+  }
+
+  private void printSolution(int[][] board) {
   }
 
 
