@@ -8,6 +8,7 @@ Exercise and algorithms for common problems
 * Backtracking Algorithms
   * Knight's Tour
   * Rat in a Maze
+  * N Queen
 * Dynamic Programming
   * Box Stacking
   * Coin Change
