@@ -2,6 +2,7 @@ package backtrackingAlgorithms.nQueen;
 
 public class NQueen {
 
+  private final int N = 4;
   public static void main(String[] args) {
     NQueen Queen = new NQueen();
     Queen.solveNQ();
@@ -26,6 +27,12 @@ public class NQueen {
   }
 
   private void printSolution(int[][] board) {
+    for (int i = 0; i < N; i++) {
+      for (int j = 0; j < N; j++) {
+        System.out.println(" " + board[i][j] + " ");
+      }
+      System.out.println();
+    }
   }
 
 
