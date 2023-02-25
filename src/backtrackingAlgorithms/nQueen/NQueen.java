@@ -23,7 +23,18 @@ public class NQueen {
     return true;
   }
 
-  private boolean solveNQUtil(int[][] board, int i) {
+  private boolean solveNQUtil(int[][] board, int col) {
+    if (col > N){
+      return true;
+    }
+    for (int i = 0; i < N; i++) {
+      if (isSafe(board, i, col)){
+        board[i][col] = 1;
+      }
+    }
+  }
+
+  private boolean isSafe(int[][] board, int i, int col) {
   }
 
   private void printSolution(int[][] board) {
