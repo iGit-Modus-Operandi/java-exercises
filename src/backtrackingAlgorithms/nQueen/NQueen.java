@@ -41,7 +41,12 @@ public class NQueen {
     return false;
   }
 
-  private boolean isSafe(int[][] board, int i, int col) {
+  private boolean isSafe(int[][] board, int row, int col) {
+    for (int i = 0; i < col; i++) {
+      if(board[row][i]){//TODO: resolve this part
+        return false;
+      }
+    }
   }
 
   private void printSolution(int[][] board) {
