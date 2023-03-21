@@ -7,8 +7,9 @@ Exercise and algorithms for common problems
   * Array Reversal
 * Backtracking Algorithms
   * Knight's Tour
-  * Rat in a Maze
+  * M Coloring
   * N Queen
+  * Rat in a Maze
 * Dynamic Programming
   * Box Stacking
   * Coin Change
