@@ -21,5 +21,17 @@ public class MColoring {
   }
 
   private static boolean graphColoring(boolean[][] graph, int m, int i, int[] color) {
+    if(i == V){
+      if(isSafe(graph, color)){
+        printSolution(color);
+        return true;
+      }
+    }
+  }
+
+  private static boolean isSafe(boolean[][] graph, int[] color) {
+  }
+
+  private static void printSolution(int[] color) {
   }
 }
