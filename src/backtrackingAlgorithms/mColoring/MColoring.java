@@ -33,5 +33,10 @@ public class MColoring {
   }
 
   private static void printSolution(int[] color) {
+    System.out.println("Solution exists:" + " Following are the assigned colors ");
+    for (int i = 0; i < V; i++) {
+      System.out.println(" " + color[i]);
+    }
+    System.out.println();
   }
 }
