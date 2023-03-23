@@ -30,6 +30,14 @@ public class MColoring {
   }
 
   private static boolean isSafe(boolean[][] graph, int[] color) {
+    for (int i = 0; i < V; i++) {
+      for (int j = i + 1; j < V; j++) {
+        if(graph[i][j] && color[j] == color[i]){
+          return false;
+        }
+      }
+    }
+    return true;
   }
 
   private static void printSolution(int[] color) {
