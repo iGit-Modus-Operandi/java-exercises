@@ -26,7 +26,18 @@ public class MColoring {
         printSolution(color);
         return true;
       }
+      return false;
     }
+
+    for (int j = 1; j < m; j++) {
+      color[i] = j;
+
+      if(graphColoring(graph, m, i + 1, color)){
+        return true;
+      }
+      color[i] = 0;
+    }
+    return false;
   }
 
   private static boolean isSafe(boolean[][] graph, int[] color) {
