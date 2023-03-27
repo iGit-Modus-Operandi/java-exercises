@@ -13,6 +13,17 @@ public class MagnetPuzzle {
     solveMagnets(rules, 0, 0);
   }
 
-  private static void solveMagnets(char[][] rules, int i, int i1) {
+  private static void solveMagnets(char[][] rules, int i, int j) {
+    if(i == rules.length && j == 0){
+      if(checkConstraints(rules)){
+        System.out.println("[");
+        for (int k = 0; k < ; k++) {
+          
+        }
+      }
+    }
+  }
+
+  private static boolean checkConstraints(char[][] rules) {
   }
 }
