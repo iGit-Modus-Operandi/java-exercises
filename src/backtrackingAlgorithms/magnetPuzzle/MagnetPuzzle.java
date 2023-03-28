@@ -14,14 +14,19 @@ public class MagnetPuzzle {
   }
 
   private static void solveMagnets(char[][] rules, int i, int j) {
-    if(i == rules.length && j == 0){
-      if(checkConstraints(rules)){
+    if (i == rules.length && j == 0) {
+      if (checkConstraints(rules)) {
         System.out.println("[");
-        for (int k = 0; k < ; k++) {
-          
+        for (int indxi = 0; indxi < rules.length; indxi++) {
+          System.out.println("[");
+          for (int indxj = 0; indxj < rules[0].length; indxj++) {
+            System.out.println("'" + rules[indxi][indxj] + "', ");
+          }
+          System.out.println("]");
         }
+        System.out.println("]");
       }
-    }
+    } else if ()
   }
 
   private static boolean checkConstraints(char[][] rules) {
