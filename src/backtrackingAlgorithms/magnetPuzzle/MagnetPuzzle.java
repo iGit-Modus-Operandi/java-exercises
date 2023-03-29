@@ -26,7 +26,11 @@ public class MagnetPuzzle {
         }
         System.out.println("]");
       }
-    } else if ()
+    } else if (j >= rules[0].length){
+      solveMagnets(rules, i + 1, 0);
+    } else {
+      if()
+    }
   }
 
   private static boolean checkConstraints(char[][] rules) {
