@@ -29,10 +29,19 @@ public class MagnetPuzzle {
     } else if (j >= rules[0].length){
       solveMagnets(rules, i + 1, 0);
     } else {
-      if()
+      if(rules[i][j] == 'L'){
+        if(canPutPatternHorizontally(rules, i, j, "+-".toCharArray()) == true){
+
+        }
+      }
     }
   }
 
+  private static boolean canPutPatternHorizontally(char[][] rules, int i, int j, char[] pat) {
+    return true;
+  }
+
   private static boolean checkConstraints(char[][] rules) {
+    return true;
   }
 }
