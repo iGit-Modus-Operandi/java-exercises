@@ -37,11 +37,23 @@ public class MagnetPuzzle {
     }
   }
 
-  private static boolean canPutPatternHorizontally(char[][] rules, int i, int j, char[] pat) {
+  private static boolean checkConstraints(char[][] rules) {
     return true;
   }
 
-  private static boolean checkConstraints(char[][] rules) {
+  private static boolean canPutPatternHorizontally(char[][] rules, int i, int j, char[] pat) {
+    if (j - 1 >= 0 && rules[i][j - 1] == pat[0]){
+      return false;
+    }
+    else if (i - 1 >= 0 && rules[i - 1][j] == pat[0]){
+      return false;
+    }
+    else if (i - 1 >= 0 && rules[i - 1][j + 1] == pat[1]){
+      return false;
+    }
+    else if (j + 2 < rules[0].length && rules[i][j + 2] == pat[1]){
+      return false;
+    }
     return true;
   }
 }
