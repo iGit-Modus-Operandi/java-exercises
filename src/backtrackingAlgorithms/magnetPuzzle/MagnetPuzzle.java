@@ -38,6 +38,18 @@ public class MagnetPuzzle {
   }
 
   private static boolean checkConstraints(char[][] rules) {
+    int M = 5;
+    int N = 6;
+    int[] top = {1, -1, -1, 2, 1, -1};
+    int[] bottom = {2, -1, -1, 2, -1, 3};
+    int[] left = {2, 3, -1, -1, -1};
+    int[] right = {-1, -1, -1, 1, -1};
+
+    int[] pCountH = new int[rules.length];
+    for (int i = 0; i < rules.length; i++) {
+      pCountH[i] = 0;
+    }
+
     return true;
   }
 
