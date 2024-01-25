@@ -50,6 +50,23 @@ public class MagnetPuzzle {
       pCountH[i] = 0;
     }
 
+    int[] nCountH = new int[rules.length];
+    for (int i = 0; i < rules.length; i++) {
+      nCountH[i] = 0;
+    }
+
+    for (int row = 0; row < rules.length; row++) {
+      for (int col = 0; col < rules[0].length; col++) {
+        char ch = rules[row][col];
+        if(ch == '+'){
+          pCountH[row] += 1;
+        }
+        else if(ch == '-'){
+          nCountH[row] += 1;
+        }
+      }
+    }
+
     return true;
   }
 
