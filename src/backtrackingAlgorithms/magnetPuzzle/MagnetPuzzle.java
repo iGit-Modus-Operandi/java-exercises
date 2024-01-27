@@ -67,6 +67,15 @@ public class MagnetPuzzle {
       }
     }
 
+    int[] pCountV = new int[rules[0].length];
+    for (int i = 0; i < rules[0].length; i++) {
+      pCountV[i] = 0;
+    }
+
+    int[] nCountV = new int[rules[0].length];
+    for (int i = 0; i < rules[0].length; i++) {
+      nCountV[i] = 0;
+    }
     return true;
   }
 
