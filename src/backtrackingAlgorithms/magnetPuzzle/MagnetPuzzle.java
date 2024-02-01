@@ -76,6 +76,20 @@ public class MagnetPuzzle {
     for (int i = 0; i < rules[0].length; i++) {
       nCountV[i] = 0;
     }
+
+    for (int row = 0; row < rules.length; row++) {
+      if (left[row] != -1){
+        if (pCountH[row] != left[row]){
+          return false;
+        }
+      }
+
+      if (right[row] != -1){
+        if (nCountH[row] != right[row]){
+          return false;
+        }
+      }
+    }
     return true;
   }
 
